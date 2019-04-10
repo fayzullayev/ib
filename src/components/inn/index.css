@@ -1,0 +1,6 @@
+.textarea :disabled{
+    color:black;
+}
+.textarea label{
+    color: black;
+}

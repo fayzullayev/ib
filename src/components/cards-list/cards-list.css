@@ -1,0 +1,22 @@
+.cards-cards{
+    max-width: 100% !important;
+    border-radius: 6px;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+}
+.cards-cards-image{
+    float: left;
+}
+.cards-cards-info{
+    float: left;
+}
+.cards-cards-name{
+    margin: 0 0 5px 12px;
+    font-size: 15px;
+    color: #787993;
+}
+.cards-cards-value{
+    margin: 0 0 5px 12px;
+    color: #000000;
+}

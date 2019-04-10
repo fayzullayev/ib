@@ -1,0 +1,54 @@
+
+  .paper{
+      border-radius: 15px!important;
+      background-position: center;
+      width: 220px;
+      height: 125px;
+      background-size: cover;
+      margin-top: 25px;
+     
+
+  }
+
+  .selected_image{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .selected_image:after {
+    content: '';
+    mix-blend-mode: screen;
+    position: absolute;
+    top: 35%;
+    bottom:40%;
+    right: 50%;
+    left: 43%;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform-origin: 50% 50%;
+    
+  }
+  
+  @keyframes ripple {
+    0%, 35% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(4);
+    }
+  }
+  
+  .selected_image::after {
+    animation: ripple 1s ease-out infinite;
+    animation-iteration-count: infinite;
+    animation-delay: .01s;
+  }

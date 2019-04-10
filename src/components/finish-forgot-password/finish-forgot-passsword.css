@@ -1,0 +1,37 @@
+
+@media screen and (max-width: 414px) {
+    .Forgot-password {
+        width: 300px !important;
+        margin: auto !important;
+        margin-top: 20px !important;
+    }
+    .innerDiv {
+        width: inherit !important;
+        margin: auto !important;
+    }
+
+    .Forgot-password-button {
+        font-size: 12px !important;
+        padding: 10px 25px !important;
+    }
+
+    .bank-name {
+        font-size: 12px !important;
+    }
+    .subtitle {
+        font-size: 10px !important;
+    }
+
+    .registration-title {
+        font-size: 16px !important;
+    }
+
+    links-parent {
+        margin: 0 !important;
+
+    }
+
+    .links {
+        font-size: 8px !important;
+    }
+}

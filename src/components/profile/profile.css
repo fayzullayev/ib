@@ -1,0 +1,35 @@
+
+.profile-form{
+    border : 1px solid black;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+    margin-top:15px
+}
+
+.profile-form:hover .profile-add-icon-container{
+    bottom: -2px;
+}
+
+.profile-add-icon-container{
+    position: absolute ;
+    width: 100%;
+    background-color: rgba(0,0,0,0.35);
+    bottom: -30px;
+    padding-top: 1px;
+    text-align: center !important;
+    transition: .2s ease-in-out;
+
+}
+.profile-add-icon{
+    color: white;
+}
+.profile-img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}

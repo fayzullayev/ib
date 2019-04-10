@@ -1,0 +1,9 @@
+.main-content-container{
+
+}
+@media screen and (max-width: 700px){
+    .main-all{
+        padding: 15px 15px !important;
+
+    }
+}

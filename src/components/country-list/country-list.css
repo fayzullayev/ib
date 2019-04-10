@@ -1,0 +1,32 @@
+.country-cards{
+    max-width: 100% !important;
+    border-radius: 6px;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+}
+.country-cards-image{
+    float: left;
+    width: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.country-cards-info{
+    float: left;
+    //border : 1px solid blue;
+    width: 90%;
+}
+.country-cards-name{
+    font-size: 15px;
+    color: #787993;
+    margin: 0;
+}
+.country-cards-value{
+    //margin: 0 0 5px 12px;
+    color: #000000;
+}
+.outlined-inputssss{
+    padding: 0 !important;
+}

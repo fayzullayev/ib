@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+.loan{
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    //box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+.loan-container{
+    width: 370px;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+}
+.loan-row{
+    margin-bottom: 10px;
+}
+.loan-row-title{
+    color: #787993;
+    margin: 0;
+}
+.loan-row-input{
+    padding: 3px 0;
+    border-bottom: 1px solid #dfdfe4;
+}
+.loan-cleave{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.loan-cleave::placeholder{
+    color: #787993;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+.loan-switch{
+    float: right;
+}
+
+.loan-switch .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+}
+
+.loan-switch .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.loan-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E3E3E3;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+
+.loan-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.loan-switch input:checked + .slider {
+    background-color: #ffc004;
+}
+.loan-switch input:checked + .slider:before {
+    -webkit-transform: translateX(34px);
+    -ms-transform: translateX(34px);
+    transform: translateX(34px);
+}
+.EARLY_CLOSURE{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 15px;
+}
+.EARLY_CLOSURE_title{
+    float: left;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 413px){
+    .loan{
+        border: none;
+        padding: 0;
+    }
+    .loan-container{
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 600px){
+    .loan{
+        border: none;
+        padding: 0;
+    }
+    .loan-container{
+        width: 370px;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 735px){
+    .loan{
+        border: none;
+        padding: 0;
+    }
+    .loan-container{
+        width: 90%;
+        padding: 15px;
+    }
+}

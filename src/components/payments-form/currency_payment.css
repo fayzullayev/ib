@@ -1,0 +1,76 @@
+.currency-switch-payment{
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+.currency-switch-payment .switch-payment {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+}
+.currency-switch-payment .switch-payment input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.currency-switch-payment .slider-payment {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffc004;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+.currency-switch-payment .slider-payment:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 2px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+.currency-switch-payment input:checked + .slider-payment {
+    background-color: #ffc004;
+}
+.currency-switch-payment input:checked + .slider-payment:before {
+    -webkit-transform: translateX(34px);
+    -ms-transform: translateX(34px);
+    transform: translateX(34px);
+}
+.currency-switch-payment .uzPayment{
+    position : absolute;
+    font-size: 10px;
+    top : 7px;
+    left: 10px;
+    cursor: pointer;
+}
+.currency-switch-payment .usdPayment{
+    position : absolute;
+    font-size: 10px;
+    top : 7px;
+    right : 10px;
+    cursor: pointer;
+}
+
+.uzsTextClassPayment{
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.usdTextClassPayment{
+    transition: 0.3s;
+    opacity: 0;
+}
+.conversion-form-payment{
+    position: relative;
+    border-bottom: 1px solid #dfdfe4;
+}

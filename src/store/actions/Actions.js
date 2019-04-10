@@ -1,0 +1,9 @@
+export const cardInformation = "CARDINFORMATION";
+export const LoginPasswords = "LOGINPASSWORDS";
+export const redirect = "REDIRECT";
+export const registrationCredentials = "REGISTRATIONCREDENTIALS";
+export const forgotPasswordCredentials = "FORGOTPASSWORDCREDENTIALS";
+export const currentLanguage = "CURRENTLANGUAGE";
+export const menuItems = "MENUITEMS";
+export const deposits = "DEPOSITSJSON";
+export const loadingHandler = "LOADING";

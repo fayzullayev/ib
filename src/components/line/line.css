@@ -1,0 +1,48 @@
+.line-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.line-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width : 100%;
+    color: white;
+}
+.line-border {
+    border-width: 2px;
+    background: #1D1F20;
+    position: relative;
+}
+.line-border:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(60deg, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    z-index: 10000;
+    animation: anims 60s ease;
+    background-size: 300% 300%;
+}
+/*#f79533*/
+
+
+@keyframes anims {
+    0% {
+        background-position: 0% 50%;
+        width : 0%
+    }
+    10% {
+        background-position: 100% 50%;
+        width : 100%;
+    }
+    100% {
+        background-position: 100% 50%;
+        width : 100%;
+    }
+}

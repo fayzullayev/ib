@@ -1,0 +1,15 @@
+.Footer {
+
+}
+
+@media screen and (max-width: 414px){
+    .bottom-below {
+        bottom: auto;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    .bottom-below {
+        bottom: 0;
+    }
+}

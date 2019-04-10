@@ -1,0 +1,143 @@
+.warning-container{
+    //border-radius: 60px;
+    height: 78vh !important;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction : column;
+    padding: 36px;
+    opacity: 1;
+
+}
+
+.warning-text{
+    font-size: 19px;
+    color: #F8BB86;
+    text-align: center;
+    text-align-last: center;
+}
+.success-label{
+    position: relative;
+    height: 127px;
+    width: 127px;
+}
+
+.f-modal-alert .f-modal-icon {
+    border-radius: 50%;
+    border: 4px solid gray;
+    box-sizing: content-box;
+    height: 80px;
+    margin: 0px auto;
+    padding: 0;
+    position: relative;
+    width: 80px;
+}
+.f-modal-alert .f-modal-icon.f-modal-warning {
+    border-color: #F8BB86;
+}
+.f-modal-alert .f-modal-icon.f-modal-warning:before {
+    animation: pulseWarning 2s linear infinite;
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+}
+.f-modal-alert .f-modal-icon.f-modal-warning:after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.f-modal-alert .f-modal-icon.f-modal-warning .f-modal-body {
+    background-color: #F8BB86;
+    border-radius: 2px;
+    height: 47px;
+    left: 50%;
+    margin-left: -2px;
+    position: absolute;
+    top: 10px;
+    width: 5px;
+    z-index: 2;
+}
+.f-modal-alert .f-modal-icon.f-modal-warning .f-modal-dot {
+    background-color: #F8BB86;
+    border-radius: 50%;
+    bottom: 10px;
+    height: 7px;
+    left: 50%;
+    margin-left: -3px;
+    position: absolute;
+    width: 7px;
+    z-index: 2;
+}
+
+.scaleWarning {
+    animation: scaleWarning 0.75s infinite alternate;
+}
+
+.pulseWarningIns {
+    animation: pulseWarningIns 0.75s infinite alternate;
+}
+
+@keyframes scaleWarning {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes pulseWarning {
+    0% {
+        background-color: #fff;
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    30% {
+        background-color: #fff;
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        background-color: #F8BB86;
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@keyframes pulseWarningIns {
+    0% {
+        background-color: #F8D486;
+    }
+    100% {
+        background-color: #F8BB86;
+    }
+}
+@media screen and (max-width: 320px){
+    .warning-btn{
+        font-size: 12px !important;
+        padding: 10px 10px !important;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 420px){
+    .warning-btn{
+        font-size: 12px !important;
+        padding: 10px 15px !important;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,40 @@
+.dep-container {
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.dep-item {
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dep-item:hover {
+  background-color: rgba(10, 38, 108, 0.03);
+}
+
+.dep-item:hover .dep-item-label {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.dep-item-percent {
+  float: right;
+  font-weight: 500;
+  color: #0a266c;
+}
+
+.dep-item-prop {
+  color: #9b9b9b;
+  font-size: 13px;
+}
+
+.dep-item-value {
+  float: right;
+  font-size: 13px;
+  font-weight: 560;
+}

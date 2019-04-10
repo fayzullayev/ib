@@ -1,0 +1,68 @@
+.settings-form{
+    position: relative;
+    border-bottom: 1px solid #dfdfe4;
+}
+.settings-title{
+    color: #787993;
+    font-size: 11px;
+}
+
+.settings-value{
+    margin-bottom: 0px;
+}
+.settings-cleave::placeholder{
+    font-size: 14px;
+    color: #979797;
+}
+.settings-big-title{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    text-align-last: center;
+}
+.setting-eye{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    cursor: pointer;
+}
+.language-row{
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 8px 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.language-row:hover{
+    background-color: rgba(10, 38, 108, 0.03);
+}
+.language-name{
+    display: flex;
+    align-items: center;
+}
+.language-name img{
+    display: block;
+    margin-right: 5px;
+}
+.language-icon{
+    margin-top: 3px;
+}
+
+
+@media screen and (max-width: 700px){
+    .setting-back-btn{
+        font-size: 12px !important;
+    }
+    .setting-password-btn{
+        font-size: 12px !important;
+    }
+    .settings-big-title{
+        font-size: 14px !important;
+    }
+    .language-name{
+        font-size: 13px !important;
+    }
+}

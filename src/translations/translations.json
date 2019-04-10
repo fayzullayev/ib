@@ -1,0 +1,1661 @@
+{
+  "lanForgotPassword": {
+    "ru": "Забыли пароль?",
+    "uzc": "Паролни унутдингизми?",
+    "uzl": "Parolni unutdingizmi?",
+    "en": "Forgot password?"
+  },
+  "lanRegistration": {
+    "ru": "Регистрация",
+    "uzc": "Рўйҳатдан ўтиш",
+    "uzl": "Ro'yhatdan o'tish",
+    "en": "Go to registration"
+  },
+  "lanLogin": {
+    "ru": "Войти в аккаунт",
+    "uzc": "Тизимга кириш",
+    "uzl": "Tizimga kirish",
+    "en": "Login"
+  },
+  "lanPhoneNumber": {
+    "ru": "Номер телефона",
+    "uzc": "Телефон рақам",
+    "uzl": "Telefon raqam",
+    "en": "Phone number"
+  },
+  "lanPassword": {
+    "ru": "Пароль",
+    "uzc": "Парол",
+    "uzl": "Parol",
+    "en": "Password"
+  },
+  "lanCopyright": {
+    "ru": "2009 – 2019 © АКБ «Asia Alliance Bank»",
+    "uzc": "2009 – 2019 © АТБ «Asia Alliance Bank»",
+    "uzl": "2009 – 2019 © ATB «Asia Alliance Bank»",
+    "en": "2009 – 2019 © JSCB «Asia Alliance Bank»"
+  },
+  "lanLicense": {
+    "ru": "Лицензия ЦБ РУз на проведение банковских операций №79 от 21 октября 2017 г.",
+    "uzc": "№79 Лицензия  21 октабр 2017 йилдаги МБ РУз банк операцияларини утказиш",
+    "uzl": "№79 Litsenziya 21 oktabr 2017 yildagi MB RUz bank operatsiyalarini o'tkazish",
+    "en": "CBU license of №79 at 21 October 2017 to operate"
+  },
+  "lanShowDetails": {
+    "ru": "Показать детали",
+    "uzc": "Маълумотларни кўриш",
+    "uzl": "Ma'lumotlarni ko'rish",
+    "en": "Show details"
+  },
+  "lanEnterInfo": {
+    "ru": "Пожалуйста, введите важные учетные данные!",
+    "uzc": "Илтимос, керакли маълумотларни киритинг!",
+    "uzl": "Iltimos, kerakli malumotlarni kiriting!",
+    "en": "Please, neccessary information!"
+  },
+  "lanEnterCode": {
+    "ru": "Пожалуйста, введите код!",
+    "uzc": "Илтимос, паролни киритинг!",
+    "uzl": "Iltimos, parolni kiriting!",
+    "en": "Please,enter code!"
+  },
+  "lanTypeCode": {
+    "ru": "Введите код",
+    "uzc": "Паролни киритинг",
+    "uzl": "Parolni kiriting",
+    "en": "Enter code"
+  },
+  "lanConfirm": {
+    "ru": "Подтвердить",
+    "uzc": "Тасдиқлаш",
+    "uzl": "Tasdiqlash",
+    "en": "Confirm"
+  },
+  "lanBackToLogin": {
+    "ru": "Вернуться в аккаунт",
+    "uzc": "Тизимга кириш",
+    "uzl": "Tizimga kirish",
+    "en": "Login"
+  },
+  "Address": {
+    "ru": "Адрес:",
+    "uzc": "Манзил:",
+    "uzl": "Manzil:",
+    "en": "Adress:"
+  },
+  "phoneNumber": {
+    "ru": "Контактный тел:",
+    "uzc": "Контакт тел:",
+    "uzl": "Kontakt tel:",
+    "en": "Phone number:"
+  },
+  "sum": {
+    "ru": "Сумавой",
+    "uzc": "Миллий",
+    "uzl": "Milliy",
+    "en": "National"
+  },
+  "foregn": {
+    "ru": "Валютный",
+    "uzc": "Хорижий",
+    "uzl": "Xorijiy",
+    "en": "Foregn"
+  },
+  "Profile": {
+    "name": {
+      "ru": "Имя",
+      "uzc": "Исм",
+      "uzl": "Ism",
+      "en": "Name"
+    },
+    "surname": {
+      "ru": "Фамилия",
+      "uzc": "Фамилия",
+      "uzl": "Familiya",
+      "en": "Surname"
+    },
+    "phonenumber": {
+      "ru": "Номер телефона",
+      "uzc": "Телефон номер",
+      "uzl": "Telefon nomer",
+      "en": "Phone number"
+    },
+    "save": {
+      "ru": "Сохранить",
+      "uzc": "Саклаш",
+      "uzl": "Saqlash",
+      "en": "Save"
+    },
+    "woman": {
+      "ru": "Женщина",
+      "uzc": "Аёл",
+      "uzl": "Ayol",
+      "en": "Woman"
+    },
+"man": {
+      "ru": "Мужчина",
+      "uzc": "Эркак",
+      "uzl": "Erkak",
+      "en": "Man"
+    }
+  },
+  "Monitoring": {
+    "toMain": {
+      "ru": "Назад",
+      "uzc": "Оркага",
+      "uzl": "Orqaga",
+      "en": "Back"
+    },
+    "filter": {
+      "ru": "Фильтр",
+      "uzc": "Саралаш",
+      "uzl": "Saralash",
+      "en": "Filter"
+    },
+    "forToday": {
+      "ru": "За сегодня",
+      "uzc": "Бугунги",
+      "uzl": "Bugungi",
+      "en": "For today"
+    },
+    "forYesterday": {
+      "ru": "За вчера",
+      "uzc": "Кечаги",
+      "uzl": "Kechagi",
+      "en": "For yesterday"
+    },
+    "forLastMonth": {
+      "ru": "За прошлый месяц",
+      "uzc": "Ўтган ой учун",
+      "uzl": "O'tgan oy uchun",
+      "en": "For last month"
+    },
+    "forCurrentMonth": {
+      "ru": "За начало месяца",
+      "uzc": "Ҳозирги ой учун",
+      "uzl": "Hozirgi oy uchun",
+      "en": "For current month"
+    },
+    "uzFilter": {
+      "ru": "Сумовые",
+      "uzc": "Миллий",
+      "uzl": "Milliy",
+      "en": "National"
+    },
+    "foregnFilter": {
+      "ru": "Валютные",
+      "uzc": "Хорижий",
+      "uzl": "Xorijiy",
+      "en": "Foreign"
+    },
+    "from": {
+      "ru": "C",
+      "uzc": "Дан",
+      "uzl": "Dan",
+      "en": "From"
+    },
+    "to": {
+      "ru": "По",
+      "uzc": "Гача",
+      "uzl": "Gacha",
+      "en": "To"
+    },
+    "filterCards": {
+      "ru": "Фильтр по картам:",
+      "uzc": "Карталарни саралаш:",
+      "uzl": "Kartalarni saralash:",
+      "en": "Filter cards:"
+    },
+    "showDetails": {
+      "ru": "Показать детали",
+      "uzc": "Маълумотларни кўриш",
+      "uzl": "Ma'lumotlarni ko'rish",
+      "en": "Show details"
+    },
+    "outcome": {
+      "ru": "Расход",
+      "uzc": "Чиқим",
+      "uzl": "Chiqim",
+      "en": "Outcome"
+    },
+    "income": {
+      "ru": "Приход",
+      "uzc": "Кирим",
+      "uzl": "Kirim",
+      "en": "Income"
+    },
+    "noDataFound": {
+      "ru": "Данные не найдены!",
+      "uzc": "Маьлумот топилмади!",
+      "uzl": "Ma'lumot topilmadi!",
+      "en": "No data found!"
+    },
+    "showMore": {
+      "ru": "Показать больше",
+      "uzc": "Кўпроқ кўриш",
+      "uzl": "Ko'proq ko'rish",
+      "en": "Show more"
+    },
+ "noDataFound": {
+      "ru": "Данные не найдены!",
+      "uzc": "Маълумот топилмади!",
+      "uzl": "Ma'lumot topilmadi!",
+      "en": "No data found!"
+    },
+    "lanLocale": {
+      "ru": "ruLocale",
+      "uzc": "ruLocale",
+      "uzl": "ruLocale",
+      "en": "enLocale"
+    },
+    "IncomeOutcome": {
+      "UZS": {
+        "ru": "сум",
+        "uzc": "сум",
+        "uzl": "so'm",
+        "en": "UZS"
+      },
+      "checkPayment": {
+        "ru": "Чек платежа",
+        "uzc": "Ҳисоб қоғози",
+        "uzl": "Hisob qog'ozi",
+        "en": "Check for payment"
+      },
+      "branchOperation": {
+        "ru": "Пункт обслуживания:",
+        "uzc": "Хизмат кўрсатиш шахобчаси:",
+        "uzl": "Xizmat ko'rsatish shahobchasi:",
+        "en": "Service branch:"
+      },
+      "terminal": {
+        "ru": "Терминал:",
+        "uzc": "Терминал:",
+        "uzl": "Terminal:",
+        "en": "Terminal:"
+      },
+      "transactionNo": {
+        "ru": "Номер транзакции:",
+        "uzc": "Ўтказма рақами:",
+        "uzl": "O'tkazma raqami:",
+        "en": "Transaction no:"
+      },
+      "createTime": {
+        "ru": "Время создания:",
+        "uzc": "Яратилиш вақти:",
+        "uzl": "Yaratilish vaqti:",
+        "en": "Creation time:"
+      },
+      "payTime": {
+        "ru": "Время оплаты:",
+        "uzc": "Тўлов вақти:",
+        "uzl": "To'lov vaqti:",
+        "en": "Payment time:"
+      },
+      "card": {
+        "ru": "Карта:",
+        "uzc": "Карта:",
+        "uzl": "Karta:",
+        "en": "Card:"
+      },
+      "amount": {
+        "ru": "Сумма платежа:",
+        "uzc": "Ўтказма миқдори:",
+        "uzl": "O'tkazma miqdori:",
+        "en": "Payment amount:"
+      },
+      "showCheck": {
+        "ru": "Показать чек",
+        "uzc": "Ҳисоб қоғозини кўриш",
+        "uzl": "Hisob qog'ozini ko'rish",
+        "en": "Show check"
+      },
+      "print": {
+        "ru": "Распечатать",
+        "uzc": "Чоп этиш",
+        "uzl": "Chop etish",
+        "en": "Print"
+      },
+      "close": {
+        "ru": "Закрыт",
+        "uzc": "Йопиш",
+        "uzl": "Yopish",
+        "en": "Close"
+      }
+    }
+  },
+  "Branches": {
+    "branches": {
+      "ru": "Отделение банка",
+      "uzc": "Филиаллар",
+      "uzl": "Filiallar",
+      "en": "Branches"
+    },
+    "miniBanks": {
+      "ru": "Мини банки",
+      "uzc": "Мини банклар",
+      "uzl": "Mini banklar",
+      "en": "Mini banks"
+    },
+    "ATMs": {
+      "ru": "Банкоматы",
+      "uzc": "Банкоматлар",
+      "uzl": "Bankomatlar",
+      "en": "ATMs"
+    },
+    "sum": {
+      "ru": "Сумовой",
+      "uzc": "Миллий",
+      "uzl": "Milliy",
+      "en": "National"
+    },
+    "foregn": {
+      "ru": "Валютный",
+      "uzc": "Хорижий",
+      "uzl": "Xorijiy",
+      "en": "Foregn"
+    },
+    "back" : {
+      "ru":  "Назад",
+      "uzc": "Орқага",
+      "uzl": "Orqaga",
+      "en":  "Back"
+    }
+  },
+  "Registration": {
+    "Registration": {
+      "ru": "Зарегистрироваться",
+      "uzc": "Рўйҳатдан ўтиш",
+      "uzl": "Ro'yhatdan o'tish",
+      "en": "Registration"
+    },
+  "enterInfo": {
+      "ru": "       Пожалуйста, запоните поля для идентификации",
+      "uzc": "Илтимос, тасдиқлаш учун қуйидаги майдонни тўлдиринг",
+      "uzl": "Iltimos, tasdiqlash uchun quyidagi maydonni to'ldiring",
+      "en": "Please, fill following inputs for identification"
+    },
+    "phoneNumber": {
+      "ru": "Номер телефона",
+      "uzc": "Телефон рақам",
+      "uzl": "Telefon raqam",
+      "en": "Phone number"
+    },
+    "cardNo": {
+      "ru": "Номер карты",
+      "uzc": "Карта рақами",
+      "uzl": "Karta raqami",
+      "en": "Card number"
+    },
+    "cardExpiryDate": {
+      "ru": "Срок действия карты",
+      "uzc": "Карта амал қилиш муддати",
+      "uzl": "Karta amal qilish muddati",
+      "en": "Card expiry date"
+    },
+    "pressNext": {
+      "ru": "Нажав кнопку «Далее», Вы принимаете все условия",
+      "uzc": "«Кейнгиси» тугмасини босиш билан, сиз розилигингизни тасдиқлайсиз",
+      "uzl": "«Keyingisi» tugmasini bosish bilan, siz roziligingizni tasdiqlaysiz",
+      "en": "By clicking «Next» button you will agree to this "
+    },
+    "termsAndConditions": {
+      "ru": "договора оферты",
+      "uzc": "келишувга",
+      "uzl": "kelishuvga",
+      "en": "agreement"
+    },
+    "Next": {
+      "ru": "Далее",
+      "uzc": "Кейингиси",
+      "uzl": "Keyingisi",
+      "en": "Next"
+    },
+    "login": {
+      "ru": "Вернуться в аккаунт",
+      "uzc": "Тизимга кириш",
+      "uzl": "Tizimga kirish",
+      "en": "Login"
+    },
+    "password": {
+      "ru": "Пароль",
+      "uzc": "Парол",
+      "uzl": "Parol",
+      "en": "Password"
+    },
+    "repeatPassword": {
+      "ru": "Подтвердите пароль",
+      "uzc": "Паролни қайта киритинг",
+      "uzl": "Parolni qayta kiriting",
+      "en": "Repeat password"
+    },
+    "enterAuthenticationCode": {
+      "ru": "Введите проверичный код",
+      "uzc": "Тасдиқлаш кодини киритинг",
+      "uzl": "Tasdiqlash kodini kiriting",
+      "en": "Enter authentication code"
+    },
+   "enterInfoSnackBar": {
+      "ru": "Пожалуйста, введите важные учетные данные!",
+      "uzc": "Илтимос, керакли маълумотларни киритинг!",
+      "uzl": "Iltimos, kerakli ma'lumotlarni kiriting!",
+      "en": "Please, enter important credentials!"
+    },
+    "repeatedPasswordIncorrect": {
+      "ru": "Пароли не совпадает!",
+      "uzc": "Пароллар бир хил эмас!",
+      "uzl": "Parollar bir xil emas!",
+      "en": "Passwords mismatch !"
+    }
+  },
+  "ForgotPassord": {
+    "doYouForgotPassword": {
+      "ru": "Забыли пароль?",
+      "uzc": "Паролни унутдингизми?",
+      "uzl": "Parolni unutdingizmi?",
+      "en": "Do you forgot the password?"
+    },
+    "phoneNumber": {
+      "ru": "Номер телефона",
+      "uzc": "Телефон рақам",
+      "uzl": "Telefon raqam",
+      "en": "Phone number"
+    },
+    "send": {
+      "ru": "Отправить",
+      "uzc": "Юбориш",
+      "uzl": "Yuborish",
+      "en": "Send"
+    },
+    "login": {
+      "ru": "Вернуться в аккаунт",
+      "uzc": "Тизимга кириш",
+      "uzl": "Tizimga kirish",
+      "en": "Login"
+    },
+    "password": {
+      "ru": "Пароль",
+      "uzc": "Парол",
+      "uzl": "Parol",
+      "en": "Password"
+    },
+    "repeatPassword": {
+      "ru": "Подтвердите пароль",
+      "uzc": "Паролни қайта киритинг",
+      "uzl": "Parolni qayta kiriting",
+      "en": "Repeat password"
+    },
+    "enterAuthenticationCode": {
+      "ru": "Введите проверичный код",
+      "uzc": "Тасдиқлаш кодини киритинг",
+      "uzl": "Tasdiqlash kodini kiriting",
+      "en": "Enter authentication code"
+    },
+    "save": {
+      "ru": "Сохранить",
+      "uzc": "Сақлаш",
+      "uzl": "Saqlash",
+      "en": "Save"
+    },
+    "enterInfoSnackBar": {
+     "ru": "Пожалуйста, введите важные учетные данные!",
+      "uzc": "Илтимос, керакли маълумотларни киритинг!",
+      "uzl": "Iltimos, kerakli ma'lumotlarni kiriting!",
+      "en": "Please,enter important credentials!"
+    },
+    "enterPhoneNo": {
+      "ru": "Пожалуйста, введите номер телефона!",
+      "uzc": "Илтимос, телефон рақамингизни киритинг!",
+      "uzl": "Iltimos, telefon raqamingizni kiriting!",
+      "en": "Please,enter phone number!"
+    },
+    "repeatedPasswordIncorrect": {
+      "ru": "Пароли не совпадает!",
+      "uzc": "Пароллар бир хил эмас!",
+      "uzl": "Parollar bir xil emas!",
+      "en": "Passwords mismatch !"
+    }
+  },
+
+  "comment1" : "-----------Mirodil----------------",
+  "Conversion": {
+    "conversionHistory": {
+      "ru": "История",
+      "uzc": "Конверсия тарихи",
+      "uzl": "Konversiya tarixi",
+      "en": "History"
+    },
+    "fromCards": {
+      "ru": "Списать с",
+      "uzc": "Картадан",
+      "uzl": "Kartadan",
+      "en": "From card"
+    },
+    "toCards": {
+      "ru": "Зачислать на",
+      "uzc": "Картага",
+      "uzl": "Kartaga",
+      "en": "To card"
+    },
+    "amounts" : {
+      "ru":  "Сумма",
+      "uzc": "Сумма",
+      "uzl": "Summa",
+      "en":  "Amount"
+    },
+    "сurrentСourses" : {
+      "ru":  "Текущий курс",
+      "uzc": "Жорий курс",
+      "uzl": "Joriy kurs",
+      "en":  "Current course"
+    },
+    "conversionAmount" : {
+      "ru":  "Сконвертированная сумма",
+      "uzc": "Айирбошланадиган сумма",
+      "uzl": "Ayirboshlanadigan summa",
+      "en":  "Conversion amount"
+    },
+    "convert" : {
+      "ru":  "Сконвертировать",
+      "uzc": "Айирбошлаш",
+      "uzl": "Ayirboshlash",
+      "en":  "Convert"
+   },
+    "agree" : {
+      "ru":  "Сконвертировать",
+      "uzc": "Айирбошлаш",
+      "uzl": "Ayirboshlash",
+      "en":  "Convert"
+    },
+    "disagree" : {
+      "ru":  "Отменить",
+      "uzc": "Бекор килиш",
+      "uzl": "Bekor qilish",
+      "en":  "Disagree"
+    },
+    "haveNotCard" : {
+      "ru":  "Для конвертации требуется как минимум одна иностранная и одна национальная карта",
+      "uzc": "Конвертация учун камида битта хорижий ва битта миллий карта керак",
+      "uzl": "Konvertatsiya uchun kamida bitta xorijiy va bitta milliy karta kerak",
+      "en":  "For conversion at least one foreign and one national card required"
+    },
+    "noDataFound" : {
+      "ru":  "Данные не найдены",
+      "uzc": "Маълумот топилмади",
+      "uzl": "Ma'lumot topilmadi",
+      "en":  "No data Found"
+    },
+    "froms" : {
+      "ru":  "Из",
+      "uzc": "Дан",
+      "uzl": "Dan",
+      "en":  "From"
+    },
+    "tos" : {
+      "ru":  "Из",
+      "uzc": "Га",
+      "uzl": "Ga",
+      "en":  "To"
+    },
+    "dates" : {
+      "ru":  "Дата",
+      "uzc": "Сана",
+      "uzl": "Sana",
+      "en":  "Date"
+    },
+    "status" : {
+      "ru":  "Состояние",
+      "uzc": "Холати",
+      "uzl": "Holati",
+      "en":  "Status"
+    }
+  },
+  "CurrencyRates" : {
+    "currency" : {
+      "ru":  "Валюта",
+      "uzc": "Валюта",
+      "uzl": "Valyuta",
+      "en":  "Currency"
+    },
+    "chooseCurrency" : {
+      "ru":  "Выберите валюту",
+      "uzc": "Валютани танланг",
+      "uzl": "Valyutani tanlang",
+      "en":  "Choose currency"
+    },
+    "CBExchange" : {
+      "ru":  "Курс ЦБ",
+      "uzc": "МБ курси",
+      "uzl": "MB kursi",
+      "en":  "CB rate"
+    },
+    "purchase" : {
+      "ru":  "Покупка",
+      "uzc": "Сотиб олиш",
+      "uzl": "Sotib olish",
+      "en":  "Buy"
+    },
+    "sale" : {
+      "ru":  "Продажа",
+      "uzc": "Сотиш",
+      "uzl": "Sotish",
+      "en":  "Sell"
+    },
+    "cardReceiver" : {
+      "ru":  "Продажа",
+      "uzc": "Соти",
+      "uzl": "Sotib olish",
+      "en":  "Sale"
+    }
+  },
+  "CardToCard" : {
+    "owner" : {
+      "ru":  "Владелец",
+      "uzc": "Егаси",
+      "uzl": "Egasi",
+      "en":  "Owner"
+    },
+    "chooseCurrency" : {
+      "ru":  "Выберите валюту",
+      "uzc": "Валютани танланг",
+      "uzl": "Valyutani tanlang",
+      "en":  "Choose currency"
+    },
+    "transferss" : {
+      "ru":  "Перевести",
+      "uzc": "Ўтказиш",
+      "uzl": "O`tkazish",
+      "en":  "Tranfer"
+    },
+    "nextss" : {
+      "ru":  "Далее",
+      "uzc": "Кейинги",
+      "uzl": "Keyingi",
+      "en":  "Next"
+    },
+    "serviceCost" : {
+      "ru":  "Комиссия банка",
+      "uzc": "Хизмат хақи",
+      "uzl": "Xizmat haqi",
+      "en":  "Service cost"
+    },
+    "totalWithServicefee" : {
+      "ru":  "Сумма с учетом услуги",
+      "uzc": "Хизмат нархи билан",
+      "uzl": "Xizmat narxi bilan",
+      "en":  "Total with service fee"
+    },
+    "minimum" : {
+      "ru":  "Минимальная сумма 1000 сум",
+      "uzc": "Минимал сумма 1000 сўм",
+      "uzl": "Minimal summa 1000 so`m",
+      "en":  "Minimum amount 1000 sum"
+    }
+  },
+  "Settings": {
+    "completedSuccessfully" : {
+      "ru":  "Успешно выполнено",
+      "uzc": "Муваффақиятли якунланди",
+      "uzl": "Muvaffaqiyatli yakunlandi",
+      "en":  "Completed successfully"
+    },
+    "currentPassword" : {
+      "ru":  "Введите Ваш текущий пароль",
+      "uzc": "Жорий паролингизни киритинг",
+      "uzl": "Joriy parolongizni kiriting",
+      "en":  "Enter current password"
+    },
+    "newPassword" : {
+      "ru":  "Введите новый пароль для входа в аккаунт",
+      "uzc": "Аккаунтга кириш учун янги паролни киритинг",
+      "uzl": "Akkauntga kirish uchun yangi parolni kiriting",
+      "en":  "Type new password for entering to account"
+    },
+    "shouldPassword" : {
+      "ru":  "Пароль должен состоять из 8 символов",
+      "uzc": "Парол камида 8 та белгидан иборат бўлиши керак",
+      "uzl": "Parol kamida 8 ta belgidan iborat bo`lishi kerak",
+      "en":  "The password must contain at least 8 characters"
+    },
+    "passwordDoesNotMatch" : {
+      "ru":  "Пароль не совпадает",
+      "uzc": "Парол мос келмаяпти",
+      "uzl": "Parol mos kelmayapti",
+      "en":  "Password does not match"
+    },
+    "currentPass" : {
+      "ru":  "Текущий пароль",
+      "uzc": "Амалдаги парол",
+      "uzl": "Amaldagi parol",
+      "en":  "Current password"
+    },
+    "newPass" : {
+      "ru":  "Новый  пароль",
+      "uzc": "Янги парол",
+      "uzl": "Yangi parol",
+      "en":  "New password"
+    },
+    "repeatPassword" : {
+      "ru":  "Повторите пароль",
+      "uzc": "Паролни қайтаринг",
+      "uzl": "Parolni qaytaring",
+      "en":  "Repeat password"
+    },
+    "back" : {
+      "ru":  "Назад",
+      "uzc": "Орқага",
+      "uzl": "Orqaga",
+      "en":  "Back"
+    },
+    "changePassword" : {
+      "ru":  "Изменить пароль",
+      "uzc": "Паролни ўзгартириш",
+      "uzl": "Parolni o`zgartirish",
+      "en":  "Change password"
+    },
+  "changeProfil" : {
+      "ru":  "Редактировать профиль",
+      "uzc": "Профилни ўзгартириш",
+      "uzl": "Profilni o`zgartirish",
+      "en":  "Edit profile"
+    },
+    "signOut" : {
+      "ru":  "Выйти из аккаунта",
+      "uzc": "Чиқиш",
+      "uzl": "Chiqish",
+      "en":  "Sign out"
+    },
+    "changeLanguage" : {
+      "ru":  "Сменить язык",
+      "uzc": "Тилни ўзгартириш",
+      "uzl": "Tilni o`zgartirish",
+      "en":  "Change language"
+    },
+    "mustMore" : {
+      "ru":  "Пароль должен состоять не менее восьми символов включая латинские буквы и цифры",
+      "uzc": "Парол  камида 8 лотин харфлари ва сонлар қатнашган белгидан  иборат бўлиши лозим",
+      "uzl": "Parol  kamida 8 lotin harflari va sonlar qatnashgan  belgidan iborat bo`lishi lozim",
+      "en":  "Password must contain more than 8 symbols including characters and digits"
+    }
+  },
+  "Loan" : {
+    "transferss" : {
+      "ru":  "Перевести",
+      "uzc": "Ўтказиш",
+      "uzl": "O`tkazish",
+      "en":  "Tranfer"
+    },
+    "nextss" : {
+      "ru":  "Далее",
+      "uzc": "Кейинги",
+      "uzl": "Keyingi",
+      "en":  "Next"
+    },
+    "earlyRepayment" : {
+      "ru":  "Досрочное погашение",
+      "uzc": "Муддатидан аввал сўндириш",
+      "uzl": "Muddatidan avval so`ndirish",
+      "en":  "Early repayment"
+    },
+    "typeCreditId" : {
+      "ru":  "Введите ID кредита",
+      "uzc": "Кредит ID'сини киритинг",
+      "uzl": "Kredit ID'sini kiriting",
+      "en":  "Type credit ID"
+    },
+    "enterAmount" : {
+      "ru":  "Введите сумму",
+      "uzc": "Суммани киритинг",
+      "uzl": "Summani kiriting",
+      "en":  "Enter amount"
+    }
+ },
+  "Warning" : {
+    "returnToMain": {
+      "ru":  "Вернуться на главную",
+      "uzc": "Бош сахифага қайтиш",
+      "uzl": "Bosh sahifaga qaytish",
+      "en":  "Return to main"
+    }
+  },
+  "Success" : {
+    "completedSuccessfully" : {
+      "ru":  "Успешно выполнено",
+      "uzc": "Муваффақиятли бажарилди",
+      "uzl": "Muvaffaqiyatli bajarildi",
+      "en":  "Completed successfully"
+    }
+  },
+  "comment2" : "-----------Mirodil----------------",
+
+  "SSN": {
+    "back": {
+      "ru" : "Назад",
+      "uzc": "Ортга қайтмоқ",
+      "uzl": "Ortga qaytmoq",
+      "en" : "Back"
+    },
+    "typeSsn": {
+      "ru" : "Введите ИНН",
+      "uzc": "СТИР ракамингизни киритинг",
+      "uzl": "STIR raqamingizni kiriting",
+      "en" : "Type your SSN"
+    },
+    "showDetails": {
+      "ru" : "Показать данные",
+      "uzc": "Маълумотларни корсатиш",
+      "uzl": "Ma'lumotlarni ko'rsatish",
+      "en" : "Show details"
+    },
+    "ssn": {
+      "ru" : "ИНН",
+      "uzc": "СТИР",
+      "uzl": "STIR",
+      "en" : "SSN"
+    },
+    "debt": {
+      "ru" : "Задолженности",
+      "uzc": "Карзлар",
+      "uzl": "Qarzlar",
+      "en" : "Debts"
+    },
+    "fullname": {
+      "ru" : "Ф.И.О",
+      "uzc": "Ф.И.О",
+      "uzl": "F.I.O",
+      "en" : "Fullname"
+    },
+    "objectName": {
+      "ru" : "Наименование",
+      "uzc": "Номлпниши",
+      "uzl": "Nomlanishi",
+      "en" : "Title"
+    },
+    "overpayment": {
+      "ru"  : "Переплата",
+      "uzc" : "Ортиқча тўлов",
+      "uzl" : "Ortiqcha to'lov",
+      "en"  : "Overpayment"
+    },
+    "fine": {
+      "ru" : "Пеня",
+      "uzc": "Пеня",
+      "uzl": "Penya",
+      "en" : "Fine"
+    },
+    "payForDebts": {
+      "ru" : "Погашение задолженности",
+      "uzc": "Карзларни тўлаш",
+      "uzl": "Qarzlarni to'lash",
+      "en" : "Pay for debts"
+    },
+    "typePassportDetails": {
+      "ru" : "Введите паспортные данные",
+      "uzc": "Паспорт маълумотларини киритинг",
+      "uzl": "Passport ma'lumotlarini kiriting",
+      "en" : "Type your passport details"
+    },
+    "passportSeries": {
+      "ru" : "Серия паспорта",
+      "uzc": "Паспорт серияси",
+      "uzl": "Pasport seriyasi",
+      "en" : "Passport Series "
+    },
+    "passportNumber": {
+      "ru" : "Номер паспорта",
+      "uzc": "Паспорт номери",
+      "uzl": "Pasport nomeri",
+      "en" : "Passport Number "
+    },
+    "province": {
+      "ru"  : "Город",
+      "uzc" : "Шахар",
+      "uzl" : "Shahar",
+      "en"  : "Province "
+    },
+    "status": {
+      "ru" : "Состояние",
+      "uzc": "Холат",
+      "uzl": "Holat",
+      "en" : "Status "
+    },
+    "goToDebts": {
+      "ru" : "Перейти к задолженностям",
+      "uzc": "Карздорликларга ўтиш",
+      "uzl": "Qarzdorliklarga otish",
+      "en" : "Go to Debts "
+    }
+  },
+  "Cards": {
+    "isDefault" : {
+      "ru" :  "Основная",
+      "uzc" : "Асосий", 
+      "uzl" : "Asosiy",
+      "en":  "Default"
+      
+    },
+    "sumCards": {
+      "ru" : "Сумовые карты",
+      "uzc": "Сўмдаги карталар",
+      "uzl": "So'mdagi kartalar",
+      "en" : "Soum cards"
+    },
+    "addCard": {
+      "ru" : "Добавить карту",
+      "uzc": "Картан қўшиш",
+      "uzl": "Karta qo'shish",
+      "en" : "Add card"
+    },
+    "TetCards": {
+      "ru" : "Валютные карты",
+      "uzc": "Валютадаги карталар",
+      "uzl": "Valyutadagi kartalar",
+      "en" : "Currency cards"
+    },
+    "Detalization": {
+      "ru" : "Мониторинг",
+      "uzc": "Мониторинг",
+      "uzl": "Monitoring",
+      "en" : "Monitoring"
+    },
+    "settings": {
+      "ru" : "Настройки карты",
+      "uzc": "Картани созлаш",
+      "uzl": "Kartani sozlash",
+      "en" : "Card settings"
+    },
+    "block": {
+      "ru" : "Блокировать карту",
+      "uzc": "Картани блоклаш",
+      "uzl": "Kartani bloklash",
+      "en" : "Block card"
+    },
+    "default": {
+      "ru" : "Сделать карту основной",
+      "uzc": "Картани асосий қилиш",
+      "uzl": "Kartani asosiy qilish",
+      "en" : "Set as default"
+    },
+    "delete": {
+      "ru" : "Удалить карту",
+      "uzc": "Картани ўчириш",
+      "uzl": "Kartani o'chirish",
+      "en" : "Delete card"
+    },
+    "delete_proposal": {
+      "ru": "Вы действительно хотите удалить эту карту?",
+      "uzc": "Сиз хақиқатдан ҳам картани ўчиришни истайсизми",
+      "uzl": "Siz haqiqatdan ham kartani o'chirishni istaysizmi",
+      "en": "Are you sure to delete this card?"
+    },
+    "yes": {
+      "ru" : "Да",
+      "uzc": "Ха",
+      "uzl": "Xa",
+      "en" : "Yes"
+    },
+    "no": {
+      "ru" : "Нет",
+      "uzc": "Йўқ",
+      "uzl": "Yo'q",
+      "en" : "No"
+    },
+    "block_proposal": {
+      "ru" : "Вы действительно хотите заблокировать эту карту?",
+      "uzc": "Сиз хақиқатдан ҳам ушбу картани блокламоқчимисиз?",
+      "uzl": "Siz haqiqatdan ham ushbu kartani bloklamoqchimisiz?",
+      "en" : "Are you sure to block this card?"
+    },
+    "default_proposal": {
+      "ru" : "Вы действительно хотите сделать эту карту основным ?",
+      "uzc": "Сиз хақиқатдан ҳам шу картани ўчиришни истайсизми?",
+      "uzl": "Siz haqiqatdan ham shu kartani o'chirishni istaysizmi?",
+      "en": "Are you sure to make default this card ?"
+    },
+    "back": {
+      "ru" : "Назад",
+      "uzc": "Ортга қайтмоқ",
+      "uzl": "Ortga qaytmoq",
+      "en" : "Back"
+    },
+    "uzcards": {
+      "ru" : "Карты UZCARD",
+      "uzc": "UZCARD карталари",
+      "uzl": "UZCARD kartalari",
+      "en" : "UZCARD Cards"
+    },
+    "visacards": {
+      "ru" : "Карты VISA",
+      "uzc": "VISA карталари",
+      "uzl": "VISA kartalari",
+      "en" : "VISA Cards"
+    },
+    "mastercards": {
+      "ru" : "Карты Mastercard",
+      "uzc": "Mastercard карталари",
+      "uzl": "Mastercard kartalari",
+      "en" : "Mastercard Cards"
+    },
+    "save": {
+      "ru" : "Сохранить",
+      "uzc": "Сақлаш",
+      "uzl": "Saqlash",
+      "en" : "Save"
+    },
+    "cardNumber": {
+      "ru": "Номер карты",
+      "uzc": "Карта рақами",
+      "uzl": "Karta raqami",
+      "en": "Card number"
+    },
+    "deadline": {
+      "ru" : "Срок действия карты",
+      "uzc": "Картанинг амал қилиш муддати",
+      "uzl": "Kartaning amal qilish muddati",
+      "en" : "Expiry date"
+    },
+    "cardName": {
+      "ru" : "Название карты",
+      "uzc": "Картанинг номи",
+      "uzl": "Kartaning nomi",
+      "en" : "Card name"
+    },
+    "smsCode": {
+      "ru" : "Код подтверждения",
+      "uzc": "Тасдиқлаш коди",
+      "uzl": "Tasdiqlash kodi",
+      "en" : "Confirmation Code"
+    },
+    "default_mark": {
+      "ru": "Основной",
+      "uzc": "Асосий",
+      "uzl": "Asosiy",
+      "en": "Default"
+    },
+    "continue": {
+      "ru" : "Продолжить",
+      "uzc": "Давом эттириш",
+      "uzl": "Davom ettirish",
+      "en" : "Continue"
+    }
+  },
+  "Bank_Contacts": {
+    "address": {
+      "ru" : "Адрес",
+      "uzc": "Манзил",
+      "uzl": "Manzil",
+      "en" : "Address"
+    },
+    "location": {
+      "ru" : "100047, г.Ташкент, ул.Махтумкули, 2А",
+      "uzc": "100047, Тошкент ш., Махтумқули кўчаси, 2А",
+      "uzl": "100047, Toshkent sh., Maxtumquli ko'chasi, 2A",
+      "en" : "100047, State. Tashkent, Str: Maxtumquli, 2A "
+    },
+    "contact_number": {
+      "ru"  : "Контактный телефон",
+      "uzc" : "Алока телефон рақами",
+      "uzl" : "Aloqa telefon raqami",
+      "en"  : "Contact number"
+    },
+    "fax": {
+      "ru"  : "Факс",
+      "uzc" : "Факс",
+      "uzl" : "fax",
+      "en"  : "fax"
+    },
+    "site": {
+      "ru"  : "Сайт",
+      "uzc" : "Вебсайт",
+      "uzl" : "Vebsite",
+      "en"  : "Site"
+    },
+    "helpline": {
+      "ru" : "Единый Call center",
+      "uzc": "Ягона телефон раками",
+      "uzl": "Yagona telefon raqami",
+      "en" : "Call center"
+    },
+    "bus_stop": {
+      "ru" : "Автобусная остановка «Машиносозлар»",
+      "uzc": "«Машиносозлар» автобус бекати",
+      "uzl": "«Машиносозлар» avtobus bekati",
+      "en" : "Bus stop «Машиносозлар»"
+    },
+    "transport": {
+      "ru" : "Транспорт",
+      "uzc": "Транспорт",
+      "uzl": "Transport",
+      "en" : "Transport"
+    },
+    "bus": {
+      "ru" : "Автобус",
+      "uzc": "Автобус",
+      "uzl": "Avtobus",
+      "en" : "Bus"
+    },
+    "route_taxi": {
+      "ru" : "Маршрутное такси",
+      "uzc": "Йоналишдаги такси",
+      "uzl": "Yonalishdagi taxsi",
+      "en" : "Route taxi"
+    },
+    "social_acc": {
+      "ru" : "Мы в социальных сетях",
+      "uzc": "Социал тармокларда",
+      "uzl": "Sotsial tarmoqlarda",
+      "en" : "Social accounts"
+    }
+  },
+  "Payments": {
+    "minSumShould":{
+      "ru" : "Минимальная сумма 500 USZ",
+      "uzc": "Энг кам тўлов миқдори 500 UZS",
+      "uzl": "Eng kam to'lov miqdori 500 UZS",
+      "en" : "Minimum amount 500 UZS"
+    },
+    "TaxesName": {
+      "ru" : "Налоговый коммитет",
+      "uzc": "Солиқ қўмитаси",
+      "uzl": "Soliq qo'mitasi",
+      "en" : "Tax Committee"
+    },
+    "toggleCurrentCourse":{
+      "ru": "Текуший курс",
+      "uzc": "Жорий курс",
+      "uzl": "Joriy kurs",
+      "en": "Current course"
+    },
+    "amountCurrencyPayments":{
+      "ru": "Сумма платежа",
+      "uzc": "Тўлов миқдори",
+      "uzl": "To'lov miqdori",
+      "en": "Amount of payment"
+    },
+    "paymentAddTemplate": {
+      "ru": "Добавить в избранные",
+      "uzc": "Танланганларга қўшиш",
+      "uzl": "Tanlanganlarga qo'shish",
+      "en": "Add to favorites"
+    },
+    "paymentGoBack": {
+      "ru": "Назад",
+      "uzc": "Ортга",
+      "uzl": "Ortga",
+      "en": "Back"
+    },
+    "paymentCategories": {
+      "ru": "Категория услуг",
+      "uzc": "Хизматлар категорияси",
+      "uzl": "Xizmatlar kategoriyasi",
+      "en": "Category of services"
+    },
+    "paymentSavedTemplates": {
+      "ru": "Избранные",
+      "uzc": "Танланганлар",
+      "uzl": "Tanlanganlar",
+      "en": "Favorites"
+    },
+    "paymentChequeforPayment": {
+      "ru": "Чек к оплате",
+      "uzc": "Тўлов чеки",
+      "uzl": "To'lov cheki",
+      "en": "Check for payment"
+    },
+    "paymentPay": {
+      "ru": "Оплатить",
+      "uzc": "Тўлаш",
+      "uzl": "To`lash",
+      "en": "Pay"
+    },
+    "paymentCardNumber": {
+      "ru": "Номер карты",
+      "uzc": "Карта рақами",
+      "uzl": "Karta raqami",
+      "en": "Card number"
+    },
+    "paymentChooseOption": {
+      "ru": "Выберите данные",
+      "uzc": "Маълумотларни танланг",
+      "uzl": "Ma'lumotlarni tanlang",
+      "en": "Select data"
+    },
+    "paymentContinue": {
+      "ru": "Продолжить",
+      "uzc": "Давом этиш",
+      "uzl": "Davom etish",
+      "en": "Continue"
+    },
+    "paymentNoTemplate": {
+      "ru": "Нет шаблонов",
+      "uzc": "Шаблонлар йўқ",
+      "uzl": "Shablonlar yo'q",
+      "en": "No Templates"
+    },
+    "paymentWantDelTemp": {
+      "ru": "Вы уверены, что хотите удалить этот сохраненный шаблон оплаты?",
+      "uzc": "Ушбу сақланган тўлов шаблонини ўчириб ташламоқчимисиз?",
+      "uzl": "Ushbu saqlangan to'lov shablonini o'chirib tashlamoqchimisiz?",
+      "en": "Are you sure you want to delete this saved payment template?"
+    },
+    "paymentDialogCancel": {
+      "ru": "Отмена",
+      "uzc": "Бекор қилиш",
+      "uzl": "Bekor qilish",
+      "en": "Cancel"
+    },
+    "paymentNameTemplate": {
+      "ru": "Названия шаблона",
+      "uzc": "Шаблон номи",
+      "uzl": "Shablon nomi",
+      "en": "Template name"
+    }
+  },
+  "Feedback": {
+    "feedback": {
+      "ru": "Обратная связь",
+      "uzc": "Кайта алока",
+      "uzl": "Qayta aloqa",
+      "en": "Feedback"
+    },
+    "subject": {
+      "ru": "Тема",
+      "uzc": "Мавзу",
+      "uzl": "Mavzu",
+      "en": "Subject"
+    },
+    "message": {
+      "ru": "Сообщение",
+      "uzc": "Хабар",
+      "uzl": "Xabar",
+      "en": "Message"
+    },
+    "yourMail": {
+      "ru": "Email",
+      "uzc": "Email",
+      "uzl": "Email",
+      "en": "Email"
+    },
+    "phoneNumber": {
+      "ru": "Номер телефона",
+      "uzc": "Телефон рақам",
+      "uzl": "Telefon raqam",
+      "en": "Phone number"
+    },
+    "FIO": {
+      "ru": "ФИО",
+      "uzc": "ФИО",
+      "uzl": "FIO",
+      "en": "Full name"
+    },
+    "send": {
+      "ru": "Отправить",
+      "uzc": "Жунатиш",
+      "uzl": "Jo'natish",
+      "en": "Send"
+    },
+    "success": {
+      "ru": "Успешно выполнено!",
+      "uzc": "Муваффакиятли бажарилди!",
+      "uzl": "Muvaffaqiyatli bajarildi!",
+      "en": "Successfully completed!"
+    }
+  },
+   "Deposits": {
+    "prevBtn": {
+      "ru": "Назад",
+      "uzc": "Ортга",
+      "uzl": "Ortga",
+      "en": "Back"
+    },
+    "depMy": {
+      "ru": "Мои вклады",
+      "uzc": "Менинг омонатларим",
+      "uzl": "Mening omonatlarim",
+      "en": "My deposits"
+    },
+    "depOpen": {
+      "ru": "Открыть вклад",
+      "uzc": "Омонатни очиш",
+      "uzl": "Omonatni ochish",
+      "en": "Open a deposit"
+    },
+    "depCalc": {
+      "ru": "Калькулятор вклада",
+      "uzc": "Омонат калькулятори",
+      "uzl": "Omonat kalkulyatori",
+      "en": "Deposit calculator"
+    },
+    "depUzb": {
+      "ru": "Сумовые вклады",
+      "uzc": "Сўмдаги омонатлар",
+      "uzl": "So'mdagi omonatlar",
+      "en": "Soum deposits"
+    },
+    "depVal": {
+      "ru": "Валютные вклады",
+      "uzc": "Валютадаги омонатлар",
+      "uzl": "Valyutadagi omonatlar",
+      "en": "Currency deposits"
+    },
+    "fullName": {
+      "ru": "Наименование вклада",
+      "uzc": "Омонат номи",
+      "uzl": "Omonat nomi",
+      "en": "Deposit name"
+    },
+    "fullCreatedDate": {
+      "ru": "Дата открытия вклада",
+      "uzc": "Омонат очилган сана",
+      "uzl": "Omonat ochilgan sana",
+      "en": "Date of deposit opening"
+    },
+    "fullStartSum": {
+      "ru": "Первоначальная сумма вклада",
+      "uzc": "Омонатнинг бошланғич суммаси",
+      "uzl": "Omonatning boshlang'ich summasi",
+      "en": "Initial amount of deposit"
+    },
+    "fullPercent": {
+      "ru": "Процентная ставка",
+      "uzc": "Фоиз ставкаси",
+      "uzl": "Foiz stavkasi",
+      "en": "Deposit interest rate"
+    },
+    "fullCurrentAmount": {
+      "ru": "Текущая сумма вклада",
+      "uzc": "Омонатнинг жорий суммаси",
+      "uzl": "Omonatning joriy summasi",
+      "en": "Current amount of deposit"
+    },
+    "fullPercentAmmount": {
+      "ru": "Текущие начисленные проценты",
+      "uzc": "Жорий ҳисобланган фоизлар",
+      "uzl": "Joriy hisoblangan foizlar",
+      "en": "Current accrued interest"
+    },
+    "fullMainAccount": {
+      "ru": "Счет вклада",
+      "uzc": "Омонат ҳисобварағи",
+      "uzl": "Omonat hisobvarag'i",
+      "en": "Deposit account"
+    },
+    "fullPercentAccount": {
+      "ru": "Счет для начисления процентов",
+      "uzc": "Фоизлар ҳисобланадиган ҳисобварақ",
+      "uzl": "Foizlar hisoblanadigan hisobvaraq",
+      "en": "Account for interest accrual"
+    },
+    "fullEndDate": {
+      "ru": "Дата закрытия",
+      "uzc": "Ёпиш санаси",
+      "uzl": "Yopish sanasi",
+      "en": "Deposit finish date"
+    },
+    "fullClosedDate": {
+      "ru": "Дата окончания срока вклада",
+      "uzc": "Омонат муддатининг тугаш санаси",
+      "uzl": "Omonat muddatining tugash sanasi",
+      "en": "Expiry date of deposit"
+    },
+    "fullClosedDay": {
+      "ru": "Осталось (дни)",
+      "uzc": "Қолди (кун)",
+      "uzl": "Qoldi (kun)",
+      "en": "Days left"
+    },
+    "fullState": {
+      "ru": "Состояние",
+      "uzc": "Ҳолати",
+      "uzl": "Holati",
+      "en": "Deposit status"
+    },
+    "fullBtn": {
+      "ru": "Операции",
+      "uzc": "Амалиётлар",
+      "uzl": "Amaliyotlar",
+      "en": "Operations"
+    },
+    "minSum": {
+      "ru": "Минимальная сумма",
+      "uzc": "Минимал сумма",
+      "uzl": "Minimal summa",
+      "en": "Minimum amount"
+    },
+    "infoTitle": {
+      "ru": "Договор оферта",
+      "uzc": "Оферта шартномаси",
+      "uzl": "Oferta shartnomasi",
+      "en": "Quotation"
+    },
+    "infoDownloadBtn": {
+      "ru": "Скачать",
+      "uzc": "Юклаб олиш",
+      "uzl": "Yuklab olish",
+      "en": "Download"
+    },
+    "infoBtn": {
+      "ru": "Принять и подписать",
+      "uzc": "Қабул қилиш ва имзолаш",
+      "uzl": "Qabul qilish va imzolash",
+      "en": "Accept"
+    },
+    "depDay": {
+      "ru": " дней",
+      "uzc": " кун",
+      "uzl": " kun",
+      "en": " days"
+    },
+    "depMonth": {
+      "ru": " месяцев",
+      "uzc": " ой",
+      "uzl": " oy",
+      "en": " months"
+    },
+    "depYear": {
+      "ru": " годов",
+      "uzc": " йил",
+      "uzl": " yil",
+      "en": " years"
+    },
+    "depUZS": {
+      "ru": " сум",
+      "uzc": " сўм",
+      "uzl": " so'm",
+      "en": " sum"
+    },
+    "depUSD": {
+      "ru": " $",
+      "uzc": " $",
+      "uzl": " $",
+      "en": " $"
+    },
+    "formTerm": {
+      "ru": "Срок вклада:",
+      "uzc": "Омонат муддати:",
+      "uzl": "Omonat muddati:",
+      "en": "Deposit term:"
+    },
+    "formPercent": {
+      "ru": "Процент:",
+      "uzc": "Фоиз:",
+      "uzl": "Foiz:",
+      "en": "Interest:"
+    },
+    "formMinSum": {
+      "ru": "Минимальная сумма вклада:",
+      "uzc": "Депозитнинг минимал миқдори:",
+      "uzl": "Depozitning minimal miqdori:",
+      "en": "The minimum deposit amount:"
+    },
+    "formCurrency": {
+      "ru": "Валюта:",
+      "uzc": "Валюта:",
+      "uzl": "Valyuta:",
+      "en": "Currency:"
+    },
+    "formViewDep": {
+      "ru": "Вид вклада:",
+      "uzc": "Омонат тури:",
+      "uzl": "Omonat turi:",
+      "en": "Deposit type:"
+    },
+    "formBtn": {
+      "ru": "Открыть вклад",
+      "uzc": "Омонатни очиш",
+      "uzl": "Omonatni ochish",
+      "en": "Open a deposit"
+    },
+    "payText": {
+      "ru": "Добавить новый депозит",
+      "uzc": "Янги омонат қўшиш",
+      "uzl": "Yangi omonat qo'shish",
+      "en": "Add a new deposit"
+    },
+    "payAmount": {
+      "ru": "Сумма",
+      "uzc": "Сумма",
+      "uzl": "Summa",
+      "en": "Amount"
+    },
+    "payCards": {
+      "ru": "Способ оплаты",
+      "uzc": "Тўлов тури",
+      "uzl": "To'lov turi",
+      "en": "Payment method"
+    },
+    "payYes": {
+      "ru": "Готово",
+      "uzc": "Бажарилди",
+      "uzl": "Bajarildi",
+      "en": "Done"
+    },
+    "payNo": {
+      "ru": "Отмена",
+      "uzc": "Бекор қилиш",
+      "uzl": "Bekor qilish",
+      "en": "Cancel"
+    },
+    "askText": {
+      "ru": "Вы уверены, что хотите перевести сумму на данный вклад?",
+      "uzc": "Сиз ҳақиқатдан ҳам суммани ушбу омонатга ўтказмоқчимисиз?",
+      "uzl": "Siz haqiqatdan ham summani ushbu omonatga o'tkazmoqchimisiz?",
+      "en": "Are your sure that you want to transfer amount to this deposit?"
+    },
+    "askYes": {
+      "ru": "Да",
+      "uzc": "Ҳа",
+      "uzl": "Ha",
+      "en": "Yes"
+    },
+    "askNo": {
+      "ru": "Нет",
+      "uzc": "Ёқ",
+      "uzl": "Yo'q",
+      "en": "No"
+    },
+    "calcDay": {
+      "ru": "День",
+      "uzc": "Кун",
+      "uzl": "Kun",
+      "en": "Day"
+    },
+    "calcMonth": {
+      "ru": "Месяц",
+      "uzc": "Ой",
+      "uzl": "Oy",
+      "en": "Month"
+    },
+    "calcYear": {
+      "ru": "Год",
+      "uzc": "Йил",
+      "uzl": "Yil",
+      "en": "Year"
+    },
+    "calcDateType": {
+      "ru": "Вид срока",
+      "uzc": "Муддат тури",
+      "uzl": "Muddat turi",
+      "en": "Period type"
+    },
+    "calcDate": {
+      "ru": "Срок вклада",
+      "uzc": "Омонат муддати",
+      "uzl": "Omonat muddati",
+      "en": "Term of deposit"
+    },
+    "calcPercent": {
+      "ru": "Процент (годовой)",
+      "uzc": "Фоиз (йиллик)",
+      "uzl": "Foiz (yillik)",
+      "en": "Interest (annual)"
+    },
+    "calcAmount": {
+      "ru": "Сумма вклада",
+      "uzc": "Омонат суммаси",
+      "uzl": "Omonat summasi",
+      "en": "Deposit amount"
+    },
+    "calcBtn": {
+      "ru": "Рассчитать",
+      "uzc": "Ҳисоблаш",
+      "uzl": "Hisoblash",
+      "en": "Calculate"
+    }
+  },
+  "Main": {
+    "homePage":{
+      "ru": "Главная",
+      "uzc": "Бош сахифа",
+      "uzl": "Bosh sahifa",
+      "en": "Home page"
+    },
+    "sideBarLogOut":{
+      "ru": "Выйти",
+      "uzc": "Чиқиш",
+      "uzl": "Chiqish",
+      "en": "Log out"
+    },
+    "doYouWantToLeave":{
+      "ru": "Вы уверены, что хотите выйти из системы?",
+      "uzc": "Ҳақиқатан ҳам тизимдан чиқишни хоҳлайсизми?",
+      "uzl": "Haqiqatan ham tizimdan chiqishni xohlaysizmi?",
+      "en": "Are you sure you want to log out the system?"
+    },
+    "sendMail":{
+      "ru": "Обратная связь",
+      "uzc": "Қайта алока",
+      "uzl": "Qayta aloqa",
+      "en": "Feedback"
+    },
+    "svCards": {
+      "ru": "Сумовые карты",
+      "uzc": "Сум карталари",
+      "uzl": "Sum kartalari",
+      "en": "National currency"
+    },
+    "tetCards": {
+      "ru": "Валютные карты",
+      "uzc": "Валюта карталари",
+      "uzl": "Valyuta kartalari",
+      "en": "Currency Cards"
+    },
+    "deposits": {
+      "ru": "Депозиты",
+      "uzc": "Омонатлар",
+      "uzl": "Omonatlar",
+      "en": "Deposits"
+    }
+  },
+  "LoadingForm":{
+    "ru": "Подождите, выполняется запрос!",
+    "uzc": "Илтимос кутинг, сўров бажарилмоқда!",
+    "uzl": "Iltimos kuting, so'rov bajarilmoqda!",
+    "en": "Please wait, request is being processed!"
+  },
+  "successMessage":{
+      "ru": "Успешно выполнено",
+      "uzc": "Муваффаққиятли якунланди",
+      "uzl": "Muvaffaqqiyatli yakunlandi",
+      "en": "Completed successfully"
+  }
+}

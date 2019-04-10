@@ -1,0 +1,382 @@
+.current-curreny-container{
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    box-sizing: border-box;
+}
+.cccc{
+    margin-bottom: 25px;
+}
+.current-currency-table-row{
+    font-size: 11px !important;
+    color: black;
+}
+.current-currency-table-cell{
+    display: flex ;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.current-currency-title{
+    padding-left: 8px;
+}
+.current-currency{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+.no-bold{
+    font-weight: normal;
+}
+.current-currency-name{
+    font-size: 10px;
+    text-align: center;
+}
+.current-white-space{
+    white-space: nowrap;
+    text-overflow: clip;
+    width: 150px;
+    text-align: left;
+}
+
+.conversion-type{
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+.conversion-btn{
+    cursor: pointer;
+    border-radius: 8px;
+}
+.conversion-btn:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.conversion-cards{
+    width: 308px;
+    border-radius: 6px;
+//display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.conversion-cards-info{
+    float: left;
+}
+.conversion-cards-name{
+    margin: 0 0 5px 12px;
+    font-size: 16px;
+    color: #787993;
+}
+.conversion-cards-value{
+    margin: 0 0 5px 12px;
+    color: #000000;
+}
+.conversion-cards-image{
+    float: left;
+}
+.current-type-name{
+    margin: 0;
+    color: #183784;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rate{
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+
+}
+.rate-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 32px;
+    font-size: 16px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.rate-container:last-child{
+    border-bottom: none;
+}
+
+.rate-buy{
+    font-weight: 500;
+    font-size: 14px;
+}
+.rate-buy-count{
+    font-size: 14px;
+}
+.rate-input{
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding-left: 5px;
+    width: 60%;
+}
+.rate-in{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.rate-currency{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.current-row{
+    border-bottom: 1px solid #e3e3e3;
+    display: flex;
+    cursor: pointer;
+}
+
+.current-row:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.current-currency-header{
+    display: flex;
+}
+.current-currency-table-cell{
+    width: 23%;
+}
+.current-currency-table-row{
+    width: 23%;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.first-row{
+    width: 31%;
+}
+
+
+@media screen and (max-width: 320px) {
+    .current-type-name{
+        font-size: 11px;
+    }
+    .current-currency-table-cell{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+    .current-currency{
+        font-size: 11px;
+    }
+    .current-currency-table-row{
+        padding: 5px;
+    }
+
+    .current-white-space{
+        width: 100px;
+    }
+    .type-container{
+        padding: 10px !important;
+    }
+    .current-white-space{
+        display: none;
+    }
+    .currency-select{
+        width: 85px !important;
+        height: 50px !important;
+    }
+    .conversion-cards-name{
+        margin: 4px 0 5px 5px;
+        font-size: 12px;
+        color: #787993;
+    }
+    .rate-input{
+        border-radius: 5px;
+        border: 1px solid #e3e3e3;
+        padding-left: 5px;
+        width: 80%;
+    }
+    .rate-currency{
+        font-size: 12px;
+    }
+    .rate-buy{
+        font-size: 12px;
+    }
+    .rate-buy-count{
+        font-size: 12px;
+    }
+    .rate-container{
+        padding: 10px;
+    }
+    .conversion-btn{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 490px) {
+    .current-currency-table-cell{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+    .current-currency{
+        font-size: 12px;
+    }
+    .current-currency-table-row{
+        padding: 7px;
+    }
+
+    .current-white-space{
+        width: 100px;
+    }
+    .type-container{
+        padding: 10px !important;
+    }
+    .current-white-space{
+        display: none;
+    }
+    .currency-select{
+        width: 90px !important;
+        height: 50px !important;
+    }
+    .conversion-cards-name{
+        margin: 4px 0 5px 5px;
+        font-size: 12px;
+        color: #787993;
+    }
+    .rate-input{
+        border-radius: 5px;
+        border: 1px solid #e3e3e3;
+        padding-left: 5px;
+        width: 70%;
+    }
+    .rate-currency{
+        font-size: 14px;
+    }
+    .rate-buy{
+        font-size: 14px;
+    }
+    .rate-buy-count{
+        font-size: 14px;
+    }
+    .rate-container{
+        padding: 12px;
+    }
+    .conversion-btn{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 491px) and (max-width: 600px) {
+    .current-currency-table-cell{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+    .current-currency{
+        font-size: 12px;
+    }
+    .current-currency-table-row{
+        padding: 7px;
+    }
+
+    .current-white-space{
+        width: 100px;
+    }
+    .type-container{
+        padding: 10px !important;
+    }
+    .current-white-space{
+        display: block;
+    }
+    .currency-select{
+        width: 90px !important;
+        height: 50px !important;
+    }
+    .conversion-cards-name{
+        margin: 4px 0 5px 5px;
+        font-size: 12px;
+        color: #787993;
+    }
+    .rate-input{
+        border-radius: 5px;
+        border: 1px solid #e3e3e3;
+        padding-left: 5px;
+        width: 70%;
+    }
+    .rate-currency{
+        font-size: 14px;
+    }
+    .rate-buy{
+        font-size: 14px;
+    }
+    .rate-buy-count{
+        font-size: 14px;
+    }
+    .rate-container{
+        padding: 12px;
+    }
+    .conversion-btn{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .ccc{
+        border-right: none !important;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 701px) {
+    .current-currency-table-cell{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+    .current-currency{
+        font-size: 11px;
+    }
+    .current-currency-table-row{
+        padding: 5px;
+    }
+
+    .current-white-space{
+        width: 100px;
+    }
+    .type-container{
+        padding: 10px !important;
+    }
+    .current-white-space{
+        display: none;
+    }
+    .currency-select{
+        width: 85px !important;
+        height: 50px !important;
+    }
+    .conversion-cards-name{
+        margin: 4px 0 5px 5px;
+        font-size: 12px;
+        color: #787993;
+    }
+    .rate-input{
+        border-radius: 5px;
+        border: 1px solid #e3e3e3;
+        padding-left: 5px;
+        width: 80%;
+    }
+    .rate-currency{
+        font-size: 12px;
+    }
+    .rate-buy{
+        font-size: 12px;
+    }
+    .rate-buy-count{
+        font-size: 12px;
+    }
+    .rate-container{
+        padding: 10px;
+    }
+    .conversion-btn{
+        margin-top: 35px;
+    }
+}

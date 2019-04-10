@@ -1,0 +1,376 @@
+.transfer{
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    padding: 32px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100% !important;
+    position: relative;
+}
+.transfer-content{
+    width: 370px;
+    box-sizing: border-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.transfer-title-back{
+    background-image: url('./assests/back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 16px;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    line-height: 24px;
+}
+.transfer-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.transfer-action{
+}
+
+.transfer-form{
+    position: relative;
+    border-bottom: 1px solid #dfdfe4;
+}
+.transfer-title{
+    color: #787993;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.transfer-value{
+    margin-bottom: 0px;
+}
+.transfer-values-container .transfer-values-inner-container{
+    overflow: hidden;
+    margin: 10px 0;
+}
+.transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course-title{
+    color: #979797;
+    font-size: 14px;
+    float: left;
+    margin: 4px;
+    margin-left: 0;
+}
+.transfer-conversion-current-course-title2{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course{
+    color: #000000;
+    font-size: 14px;
+    float: right;
+    margin: 4px;
+    font-weight: bold;
+    margin-right: 0;
+}
+.transfer-action{
+
+}
+.transfer-owner-name{
+    margin: 10px 0;
+}
+.transfer-cleave::placeholder{
+    font-size: 14px;
+    color: #979797;
+}
+
+
+@media screen and (max-width: 320px) {
+    .go-back-icon{
+        margin-left: 16px !important;
+        margin-bottom: 10px !important;
+    }
+    .main-content{
+        padding: 0 !important;
+        padding-top: 12px !important;
+    }
+    .transfer{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .transfer-content{
+        width: 90%;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .owner-name{
+        text-transform: capitalize;
+        font-size: 12px;
+    }
+    .owner-name2{
+        font-size: 12px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course-title{
+        font-size: 12px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course{
+        font-size: 12px;
+    }
+    .transfer-title{
+        font-size: 11px;
+    }
+
+    .transfer-title:first-letter{
+       text-transform: uppercase;
+    }
+    .transfer-title-back{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .go-back-icon{
+        margin-left: 16px !important;
+        margin-bottom: 10px !important;
+    }
+    .main-content{
+        padding: 0 !important;
+        padding-top: 12px !important;
+    }
+
+    .transfer{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .transfer-content{
+        width: 90%;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .owner-name{
+        text-transform: capitalize;
+        font-size: 13px;
+    }
+    .owner-name2{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course-title{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course{
+        font-size: 13px;
+    }
+    .transfer-title{
+        font-size: 12px;
+    }
+
+    .transfer-title:first-letter{
+        text-transform: uppercase;
+    }
+    .transfer-title-back{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+    .go-back-icon{
+        margin-left: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    .main-content{
+        padding: 0 !important;
+        padding-top: 12px !important;
+    }
+    .transfer{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .transfer-content{
+        width: 90%;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .owner-name{
+        text-transform: capitalize;
+        font-size: 13px;
+    }
+    .owner-name2{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course-title{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course{
+        font-size: 13px;
+    }
+    .transfer-title{
+        font-size: 12px;
+    }
+
+    .transfer-title:first-letter{
+        text-transform: uppercase;
+    }
+    .transfer-title-back{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 480px) {
+    .go-back-icon{
+        margin-left: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    .main-content{
+        padding: 0 !important;
+        padding-top: 12px !important;
+    }
+    .transfer{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .transfer-content{
+        width: 90%;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .owner-name{
+        text-transform: capitalize;
+        font-size: 13px;
+    }
+    .owner-name2{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course-title{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course{
+        font-size: 13px;
+    }
+    .transfer-title{
+        font-size: 12px;
+    }
+
+    .transfer-title:first-letter{
+        text-transform: uppercase;
+    }
+    .transfer-title-back{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .go-back-icon{
+        margin-left: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    .main-content{
+        padding: 0 !important;
+        padding-top: 12px !important;
+    }
+    .transfer{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .transfer-content{
+        width: 430px;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .owner-name{
+        text-transform: capitalize;
+        font-size: 13px;
+    }
+    .owner-name2{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course-title{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course{
+        font-size: 13px;
+    }
+    .transfer-title{
+        font-size: 12px;
+    }
+
+    .transfer-title:first-letter{
+        text-transform: uppercase;
+    }
+    .transfer-title-back{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 735px) {
+    .go-back-icon{
+        margin-left: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    .main-content{
+        padding: 0 !important;
+        padding-top: 12px !important;
+    }
+    .transfer{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+    }
+    .transfer-content{
+        width: 90%;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .owner-name{
+        text-transform: capitalize;
+        font-size: 13px;
+    }
+    .owner-name2{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course-title{
+        font-size: 13px;
+    }
+
+    .transfer-values-container .transfer-values-inner-container .transfer-conversion-current-course{
+        font-size: 13px;
+    }
+    .transfer-title{
+        font-size: 12px;
+    }
+
+    .transfer-title:first-letter{
+        text-transform: uppercase;
+    }
+    .transfer-title-back{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+

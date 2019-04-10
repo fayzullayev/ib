@@ -1,0 +1,36 @@
+.ul {
+    list-style-type: none;
+}
+
+.ul li {
+    float: left;
+}
+
+@media screen and (max-width: 414px) {
+    .Login {
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .Login-button {
+        font-size: 12px !important;
+        padding: 10px 25px !important;
+    }
+
+    .bank-name {
+        font-size: 12px !important;
+    }
+
+    .login-title {
+        font-size: 16px !important;
+    }
+
+    links-parent {
+        margin: 0 !important;
+
+    }
+
+    .links {
+        font-size: 8px !important;
+    }
+}

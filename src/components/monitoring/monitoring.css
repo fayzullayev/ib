@@ -1,0 +1,57 @@
+.check_icon:hover {
+    cursor: pointer;
+}
+
+.check_icon:hover .check_icon2, .check_icon:hover .check_icon3 {
+    color: #25265E !important;
+}
+@media screen and (max-width: 414px) {
+    .showDetailsButton {
+        font-size: 12px !important;
+        padding: 10px 25px !important;
+    }
+
+    .dateFilters {
+        width: 100% !important;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+
+    .width-50 {
+        width: 50%;
+    }
+
+    .border-red {
+        border: 1px solid;
+    }
+
+    .font-size-10 {
+        font-size: 10px !important;
+        padding: 0 25px !important;
+    }
+
+    .font-size-8 {
+        font-size: 8px !important;
+        padding: 0 5px !important;
+    }
+
+    .merchant-name {
+        font-weight: 300 !important;
+        font-size: 10px !important;
+        padding: 5px;
+    }
+
+    .bank-name {
+        font-size: 12px !important;
+    }
+    .check-payment {
+        font-size: 12px !important;
+    }
+}
+@media print {
+    #printButtonParent {
+        visibility: hidden;
+    }
+}
