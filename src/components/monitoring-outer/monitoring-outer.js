@@ -28,6 +28,9 @@ import './monitoring.css';
 import ruLocale from 'date-fns/locale/ru';
 import enLocale from 'date-fns/locale/en-US';
 import {withRouter} from "react-router-dom";
+import TableHead from "@material-ui/core/TableHead";
+import TableCell from "@material-ui/core/TableCell";
+import Table from "@material-ui/core/Table";
 
 const styles = theme => ({
     main: {
@@ -140,7 +143,8 @@ class Monitoring extends Component {
             currentLanguage: this.props.language,
             hasError: false,
             errorMessage: "",
-            switchDisable: true
+            switchDisable: true,
+            visible: false,
         }
     }
 
@@ -165,10 +169,21 @@ class Monitoring extends Component {
                 card_number: this.props.cardInfo.valCards[0].card_number,
                 innerWaiting: false,
                 switchDisable: this.props.cardInfo.valCards.length ? false : true
-            })
+            });
+            setTimeout(() => {
+                this.dateHandlerForCurrentMonth();
+                this.monitoringHandler();
+            }, 0)
 
         }
 
+    }
+
+    componentWillMount() {
+        if (this.props.cardInfo.uzCards.length > 0) {
+            this.dateHandlerForCurrentMonth();
+            this.monitoringHandler();
+        }
     }
 
     monitoringHandler = () => {
@@ -227,7 +242,8 @@ class Monitoring extends Component {
                                 uzCardsFiltered: uzCardsFiltered,
                                 page_number: prevState.page_number + 1,
                                 lastPage: JSON.parse(responseJsonUZS.last),
-                                innerWaiting: false
+                                innerWaiting: false,
+                                visible: true,
                             }
                         })
                     } else {
@@ -471,14 +487,7 @@ class Monitoring extends Component {
             })
         }
     };
-    filterHandler = () => {
-        this.setState({
-            ...this.state,
-            atFilter: true,
-            page_number: 0
 
-        })
-    };
     showMoreHandler = () => {
         this.setState({
             ...this.state,
@@ -517,16 +526,6 @@ class Monitoring extends Component {
             }
             console.log(responseJsonUZS);
         });
-
-    };
-    goBackHandler = () => {
-        if (this.state.atFilter) {
-
-        } else {
-            this.setState({
-                atFilter: true
-            });
-        }
 
     };
 
@@ -601,25 +600,8 @@ class Monitoring extends Component {
             })
         }
         return (
-            <div style={{position: 'relative'}}>
+            this.state.visible ? this.props.cardInfo.uzCards.length > 0 ? <div style={{position: 'relative'}}>
                 <MuiPickersUtilsProvider utils={DateFnsUtils} locale={locale}>
-                    {/*<Grid container justify="space-between">*/}
-                    {/*    <Button className={classes.goBack}*/}
-                    {/*            onClick={this.state.atFilter ? this.props.history.goBack : this.goBackHandler}>*/}
-                    {/*        <ListItemIcon style={{marginRight: 0}}><img src={GoBack} alt="goBack"/></ListItemIcon>*/}
-                    {/*        <ListItemText*/}
-                    {/*            primary={*/}
-                    {/*                <Typography variant="inherit">*/}
-                    {/*                    {lan.toMain[currentLanguage]} /!*?? ???????*!/*/}
-                    {/*                </Typography>*/}
-                    {/*            }/>*/}
-                    {/*    </Button>*/}
-                    {/*    <Button onClick={this.filterHandler}>*/}
-                    {/*        <Typography variant="inherit">*/}
-                    {/*            {lan.filter[currentLanguage]} /!*??????*!/*/}
-                    {/*        </Typography>*/}
-                    {/*    </Button>*/}
-                    {/*</Grid>*/}
                     <div style={{
                         borderRadius: "6px",
                         border: "1px solid #e3e3e3",
@@ -735,6 +717,7 @@ class Monitoring extends Component {
                                     </div>
                                     <div style={{display: "flex", justifyContent: "center"}}>
                                         <Button onClick={this.monitoringHandler}
+                                                id='showDetailsButton'
                                                 style={{margin: "auto"}}
                                                 type="submit"
                                                 variant="contained"
@@ -763,6 +746,29 @@ class Monitoring extends Component {
                                     </Button>
                                 </Grid>
                                 {!this.state.noData ? <Grid style={{width: "100%"}}>
+                                        <Divider style={{width: "100%"}} style={{marginTop: '10px'}}/>
+                                        <Table className={classes.table} style={{background: '#f7f8fa'}}>
+                                            <TableHead>
+                                                <TableCell className={`font-size-10`}
+                                                           style={{color: '#000000', fontSize: '12px', height: '33px'}}>
+                                                    {lan.branchOperation[currentLanguage]}
+                                                </TableCell>
+                                                <TableCell align="center" className={`font-size-8`} style={{
+                                                    color: '#000000',
+                                                    fontSize: '12px',
+                                                    height: '33px'
+                                                }}>
+                                                    {lan.date[currentLanguage]}
+                                                </TableCell>
+                                                <TableCell className={` font-size-8`} style={{
+                                                    color: '#000000',
+                                                    fontSize: '12px',
+                                                    height: '33px'
+                                                }}>
+                                                    {lan.amount[currentLanguage]}
+                                                </TableCell>
+                                            </TableHead>
+                                        </Table>
                                         {this.state.monitoringType === "income" ?
                                             <Income incomeData={this.state.incomeData}
                                                     historyType={this.state.historyType}
@@ -781,13 +787,13 @@ class Monitoring extends Component {
                                             width: "100%",
                                             alignItems: "center",
                                         }}>
-                                            <Button id = 'showDetailsButton'
+                                            <Button
                                                 onClick={this.showMoreHandler}
-                                                    type="submit"
-                                                    variant="contained"
-                                                    color="secondary"
-                                                    className={`${classes.submit} showDetailsButton`}
-                                                    style={{margin: "15px 0"}}
+                                                type="submit"
+                                                variant="contained"
+                                                color="secondary"
+                                                className={`${classes.submit} showDetailsButton`}
+                                                style={{margin: "15px 0"}}
                                             >
                                                 {lan.showMore[currentLanguage]} {/*Show more*/}
                                             </Button>
@@ -803,7 +809,7 @@ class Monitoring extends Component {
                         }
                     </div>
                 </MuiPickersUtilsProvider>
-            </div>
+            </div> : null : null
         );
     }
 }
