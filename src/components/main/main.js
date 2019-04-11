@@ -273,7 +273,7 @@ class Main extends Component {
             clientSrc:src
         })
          
-    }
+    };
     componentDidMount(){
         console.log(this.props.match.url);
         if(this.props.match.url==="/main/");

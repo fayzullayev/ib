@@ -172,16 +172,6 @@ class Monitoring extends Component {
 
     }
 
-    //
-    // componentWillMount() {
-    //     setTimeout(() => {
-    //         this.setState({
-    //             isWaiting: false
-    //         })
-    //     }, 50);
-    // }
-
-
     monitoringHandler = () => {
         this.setState({
             ...this.state,
@@ -566,7 +556,7 @@ class Monitoring extends Component {
                         }
                         key={this.iterator++}
                         className={classes.chip}
-                        label={data.card_name.slice(0,20)}
+                        label={data.card_name.slice(0, 20)}
                         onDelete={() => this.handleDeleteForUzCards(index)}
                         color="secondary"
                     />
@@ -576,7 +566,7 @@ class Monitoring extends Component {
                             <CardIcon/>
                         }
                         key={this.iterator++}
-                        label={data.card_name.slice(0,20)}
+                        label={data.card_name.slice(0, 20)}
                         onDelete={() => this.handleDeleteForUzCards(index)}
                         className={classes.chip}
                         deleteIcon={<DoneIcon/>}
