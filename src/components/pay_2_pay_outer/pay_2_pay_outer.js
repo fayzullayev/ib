@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from "@material-ui/core/Grid"
-import "./pay_2_pay.css"
+import "./pay_2_pay_outer.css"
 import  {connect}from "react-redux"
 import Button from "@material-ui/core/Button";
 import withStyles from '@material-ui/core/styles/withStyles';
@@ -21,7 +21,7 @@ const styles = theme => ({
     submit: theme.submit
 });
 
-class Pay2Pay extends Component {
+class Pay2PayOuter extends Component {
     api = new Api();
     state ={
         card_num: null,
@@ -90,18 +90,22 @@ class Pay2Pay extends Component {
 
     componentWillMount() {
 
-        this.setState({
-            data : this.props.cards
-        });
+        if(this.props.cards.length > 0){
+            this.setState({
+                data : this.props.cards
+            });
 
-        const idx = this.props.cards.findIndex((item) => item.is_default === "Y");
-        if(idx >= 0 ){
-            const currentCard = this.props.cards[idx].card_number;
-            this.setState({ params : {...this.state.params,CARD_NUMBER: currentCard}});
-        }else{
-            const currentCard = this.props.cards[0].card_number;
-            this.setState({ params : {...this.state.params,CARD_NUMBER: currentCard}});
+            const idx = this.props.cards.findIndex((item) => item.is_default === "Y");
+            if(idx >= 0 ){
+                const currentCard = this.props.cards[idx].card_number;
+                this.setState({ params : {...this.state.params,CARD_NUMBER: currentCard}});
+            }else{
+                const currentCard = this.props.cards[0].card_number;
+                this.setState({ params : {...this.state.params,CARD_NUMBER: currentCard}});
+            }
         }
+
+
 
         // const requestForCards = {
         //     request: "Cards",
@@ -357,7 +361,6 @@ class Pay2Pay extends Component {
              this.setState({
                  waiting : true
              });
-             console.log(JSON.stringify(jsons));
             this.api.SetAjax(jsons).then(data=>{
                 if(data.result === '1'){
                     this.setState({
@@ -398,146 +401,19 @@ class Pay2Pay extends Component {
 
 
     render () {
-        const {owner,chooseCurrency,transferss,nextss,serviceCost,totalWithServicefee} = Translations.CardToCard;
-        const lang = this.props.language;
-        if(this.state.success){
-            return <Success url="/main"/>
-        }
-        if(this.state.waiting){
-            return <Waiting/>
-        }
-        if(this.state.warning){
-            return <Warning url ="/main" text = {this.state.text}/>
-        }
-
-        console.log("params----------------",this.state.params);
-        console.log("cards----------------",this.props.cards);
-
-        const { vertical, horizontal, open,msg,haveOwner,waiting,amount,amount_including_services } = this.state;
-        const {classes} = this.props;
-        const visible = haveOwner ? "block" : 'none';
-
-        const inputs = this.state.request_1.service_details.map(item=> {
-                if (item.is_visible === "Y" && item.param_type === "N") {
-
-                    if (item.code === "CARD_RECEIVER"){
-                        return (
-                            <div  className="transfer-form" key={item.code}>
-                                <p className="transfer-title transfer-value">{item.name}</p>
-                                <Cleave options={
-                                        {
-                                            creditCard: true,
-                                            delimiter: ' '
-                                        }
-                                    }
-                                        placeholder = {item.hint}
-                                        name = {item.code}
-                                        value = {item.def_value}
-                                        readOnly = {item.is_read_only === "N" ? false : true}
-                                        onChange={this.handleChangeSelect}
-                                        style  = {{border :"none" ,height: "40px",fontSize: '16px',outline : "none"}}
-                                        className = "transfer-cleave"
-                                        autoComplete = "off"
-                                />
-                            </div>
-                        )
-                    }
-                    if (item.code === "AMOUNT"){
-                        return (
-                            <div  className="transfer-form" style={{display : visible}} key={item.code}>
-                                <p className="transfer-title transfer-value">{item.name}</p>
-                                <Cleave options={
-                                            {
-                                                numeralThousandsGroupStyle : "thousand",
-                                                numeral: true,
-                                                numeralIntegerScale: 10,
-                                                numeralDecimalScale: 2,
-                                                numeralDecimalMark: '.',
-                                                delimiter: ' ',
-                                                numeralPositiveOnly: true
-                                            }
-                                        }
-                                        name = {item.code}
-                                        value = {item.def_value}
-                                        readOnly = {item.is_read_only === "N" ? false : true}
-                                        onChange={this.handleChangeSelect}
-                                        style  = {{border :"none" ,height: "40px",fontSize: '16px',outline : "none"}}
-                                        className = "transfer-cleave"
-                                />
-                            </div>
-                        )
-                    }
-                }
-            }
-        );
-
-
-        let cards;
-        let ownerName = haveOwner ? <span className='owner-name2'>{owner[lang]} : <span className='owner-name'>{ this.state.owner.fio  }</span></span>  : null;
-       // let btn_text = this.state.request_1.level_position === "-1" ? Translations.CardToCard.transfers[lang]  :  Translations.CardToCard.next[lang];
-        let crd = this.state.request_1.level_position === "-1" ?<div> <p className='transfer-conversion-current-course-title2'>{chooseCurrency[lang]}</p>
-            <CardsList data={this.state.data} cardHandler = {this.cardHandler}/></div> : null;
-        if(haveOwner){
-            cards = (<div>
-                        <div className="transfer-values-container">
-                            <div className="transfer-values-inner-container">
-                                <p className='transfer-conversion-current-course-title'>{serviceCost[lang]}:</p>
-                                <p className='transfer-conversion-current-course'> {this.state.owner.percent}%</p>
-                            </div>
-                            <div className="transfer-values-inner-container">
-                                <p className='transfer-conversion-current-course-title'> {totalWithServicefee[lang]}:</p>
-                                <p className='transfer-conversion-current-course'> {accounting.formatMoney(amount_including_services,"","2"," ",".")}</p>
-                            </div>
-                        </div>
-                        {crd}
-                        <div className="transfer-button">
-                            <Button
-                                type="submit"
-                                variant="contained"
-                                color="secondary"
-                                className={classes.submit}
-                                onClick = {this.convert}
-                            >
-                                {this.state.request_1.level_position === "-1" ? Translations.CardToCard.transferss[lang]  :  Translations.CardToCard.nextss[lang]}
-
-                            </Button>
-                        </div>
-                    </div>);
-        }
-
         return (
-          <Grid container className="transfer" justify="center">
-                <Snackbar
-                    anchorOrigin={{ vertical, horizontal }}
-                    open={open}
-                    onClose={this.handleClose}
-                    ContentProps={{
-                        'aria-describedby': 'message-id',
-
-                    }}
-                    autoHideDuration = {4000}
-                    message={<span id="message-id">{this.state.msg}</span>}
-                />
-                <div className='transfer-content'>
-                    {this.state.opacityWaiting ? <OpacityWaiting/> : null}
-                    <div className="transfer-title-back">
-                        Вы можете перевести Ваши денежные средства с карты на карту UZCARD или VISA нашего банка
-                    </div>
-                    {inputs}
-                    <p className="transfer-owner-name">
-                        {ownerName}
-                    </p>
-                    <div className='transfer-action'>
-                        {cards}
-                    </div>
-                </div>
-          </Grid>
+            <div className="otransfer">
+                <Grid container spacing={16}>
+                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>1</Grid>
+                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>2</Grid>
+                </Grid>
+            </div>
         );
     }
 }
 
 
-Pay2Pay.propTypes = {
+Pay2PayOuter.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
@@ -559,4 +435,4 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export default connect(mapStateToProps,mapDispatchToProps)(withStyles(styles)(Pay2Pay));
+export default connect(mapStateToProps,mapDispatchToProps)(withStyles(styles)(Pay2PayOuter));

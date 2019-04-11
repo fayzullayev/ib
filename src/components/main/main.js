@@ -300,6 +300,7 @@ class Main extends Component {
                                                key={text.target}/>)
                             }) : ""}
                         </Switch>
+                        
                     </main>
 
 

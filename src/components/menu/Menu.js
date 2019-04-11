@@ -12,6 +12,7 @@ import TetCards from './tetcards'
 import Deposits from './depositsForMenu'
 import './menu.css';
 import InnerWaiting from "../spinner-opacity";
+import Pay2PayOuter from "../pay_2_pay_outer";
 const styles = theme => ({
 content: {
     flexGrow: 1,
@@ -120,6 +121,7 @@ class Menu extends Component {
                 {this.state.innerWaiting ? <InnerWaiting/> : ""}
                     {menu_content}
                 </Grid>
+                <Pay2PayOuter/>
           </div> );
     }
 }
