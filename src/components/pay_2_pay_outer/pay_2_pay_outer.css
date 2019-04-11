@@ -1,4 +1,22 @@
 .otransfer {
      border-radius: 6px;
-     border: 1px solid #e3e3e3;
+     padding: 14px 32px 24px 32px;
  }
+.potransfer {
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.otransfer-title {
+    margin: 0;
+    font-weight: bold;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 24px 32px;
+}
+.otransfer-grid2{
+    padding-right: 24px !important; ;
+}
+.otransfer-grid3{
+    padding-left: 24px !important; ;
+}
