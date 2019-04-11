@@ -16,9 +16,6 @@ import FormGroup from "@material-ui/core/FormGroup";
 import Switch from "@material-ui/core/Switch";
 import Income from './income';
 import Outcome from './outcome';
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import GoBack from "./assets/go-back.png";
-import ListItemText from "@material-ui/core/ListItemText";
 import Waiting from '../waiting';
 import Api from '../../services/api';
 import CardIcon from '@material-ui/icons/CreditCard';
@@ -120,10 +117,10 @@ class Monitoring extends Component {
             end_date: momentToday,
             date_begin: momentTodayWithDots,
             date_end: momentTodayWithDots,
-            selectedDateFromToday: true,
+            selectedDateFromToday: false,
             selectedDateFromYesterday: false,
             selectedDateFromLastMonth: false,
-            selectedDateFromCurrentMonth: false,
+            selectedDateFromCurrentMonth: true,
             selectedDateFrom: new Date(),
             selectedDateTo: new Date(),
             cardTypeToMonitorUZ: true,
@@ -148,6 +145,7 @@ class Monitoring extends Component {
     }
 
     iterator = 0;
+
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         console.log("Cards info from Redux for uzCards --------------", this.props.cardInfo.uzCards);
@@ -605,23 +603,23 @@ class Monitoring extends Component {
         return (
             <div style={{position: 'relative'}}>
                 <MuiPickersUtilsProvider utils={DateFnsUtils} locale={locale}>
-                    <Grid container justify="space-between">
-                        <Button className={classes.goBack}
-                                onClick={this.state.atFilter ? this.props.history.goBack : this.goBackHandler}>
-                            <ListItemIcon style={{marginRight: 0}}><img src={GoBack} alt="goBack"/></ListItemIcon>
-                            <ListItemText
-                                primary={
-                                    <Typography variant="inherit">
-                                        {lan.toMain[currentLanguage]} {/*?? ???????*/}
-                                    </Typography>
-                                }/>
-                        </Button>
-                        <Button onClick={this.filterHandler}>
-                            <Typography variant="inherit">
-                                {lan.filter[currentLanguage]} {/*??????*/}
-                            </Typography>
-                        </Button>
-                    </Grid>
+                    {/*<Grid container justify="space-between">*/}
+                    {/*    <Button className={classes.goBack}*/}
+                    {/*            onClick={this.state.atFilter ? this.props.history.goBack : this.goBackHandler}>*/}
+                    {/*        <ListItemIcon style={{marginRight: 0}}><img src={GoBack} alt="goBack"/></ListItemIcon>*/}
+                    {/*        <ListItemText*/}
+                    {/*            primary={*/}
+                    {/*                <Typography variant="inherit">*/}
+                    {/*                    {lan.toMain[currentLanguage]} /!*?? ???????*!/*/}
+                    {/*                </Typography>*/}
+                    {/*            }/>*/}
+                    {/*    </Button>*/}
+                    {/*    <Button onClick={this.filterHandler}>*/}
+                    {/*        <Typography variant="inherit">*/}
+                    {/*            {lan.filter[currentLanguage]} /!*??????*!/*/}
+                    {/*        </Typography>*/}
+                    {/*    </Button>*/}
+                    {/*</Grid>*/}
                     <div style={{
                         borderRadius: "6px",
                         border: "1px solid #e3e3e3",
@@ -783,7 +781,8 @@ class Monitoring extends Component {
                                             width: "100%",
                                             alignItems: "center",
                                         }}>
-                                            <Button onClick={this.showMoreHandler}
+                                            <Button id = 'showDetailsButton'
+                                                onClick={this.showMoreHandler}
                                                     type="submit"
                                                     variant="contained"
                                                     color="secondary"

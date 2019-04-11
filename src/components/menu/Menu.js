@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 import {Grid} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
@@ -13,6 +13,7 @@ import Deposits from './depositsForMenu'
 import './menu.css';
 import InnerWaiting from "../spinner-opacity";
 import Pay2PayOuter from "../pay_2_pay_outer";
+import Monitoring from '../monitoring-outer';
 const styles = theme => ({
     content: {
         flexGrow: 1,
@@ -57,7 +58,7 @@ class Menu extends Component {
         valCards: [],
         depositsList: "",
         innerWaiting: this.props.cardInfo.allCards ? false : true,
-    }
+    };
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (this.props.cardInfo !== prevProps.cardInfo) {
@@ -135,11 +136,7 @@ class Menu extends Component {
                 {this.state.innerWaiting ? <InnerWaiting/> : ""}
                 {menu_content}
             </Grid>
-                <div className="otransfer">
-                    <Grid container spacing={16}>
-                        Monitoring
-                    </Grid>
-                </div>
+                <Monitoring/>
                 <Pay2PayOuter/>
           </div> );
     }
@@ -159,4 +156,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(withStyles(styles, {withTheme: true})(Menu));
+)(withRouter(withStyles(styles, {withTheme: true})(Menu)));
