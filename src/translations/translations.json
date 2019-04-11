@@ -236,18 +236,31 @@
       "uzl": "Ko'proq ko'rish",
       "en": "Show more"
     },
- "noDataFound": {
-      "ru": "Данные не найдены!",
-      "uzc": "Маълумот топилмади!",
-      "uzl": "Ma'lumot topilmadi!",
-      "en": "No data found!"
-    },
     "lanLocale": {
       "ru": "ruLocale",
       "uzc": "ruLocale",
       "uzl": "ruLocale",
       "en": "enLocale"
     },
+    "branchOperation": {
+      "ru": "Пункт обслуживания",
+      "uzc": "Хизмат кўрсатиш шахобчаси",
+      "uzl": "Xizmat ko'rsatish shahobchasi",
+      "en": "Service branch"
+    },
+    "amount": {
+      "ru": "Сумма ",
+      "uzc": "Ўтказма миқдори",
+      "uzl": "O'tkazma miqdori",
+      "en": "Amount:"
+    },
+    "date": {
+      "ru": "Дата",
+      "uzc": "Сана",
+      "uzl": "Sana",
+      "en": "Date"
+    },
+
     "IncomeOutcome": {
       "UZS": {
         "ru": "сум",

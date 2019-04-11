@@ -28,6 +28,9 @@ import './monitoring.css';
 import ruLocale from 'date-fns/locale/ru';
 import enLocale from 'date-fns/locale/en-US';
 import {withRouter} from "react-router-dom";
+import TableHead from "@material-ui/core/TableHead";
+import TableCell from "@material-ui/core/TableCell";
+import Table from "@material-ui/core/Table";
 
 const styles = theme => ({
     main: {
@@ -141,7 +144,7 @@ class Monitoring extends Component {
             hasError: false,
             errorMessage: "",
             switchDisable: true,
-            visible : false,
+            visible: false,
         }
     }
 
@@ -167,17 +170,17 @@ class Monitoring extends Component {
                 innerWaiting: false,
                 switchDisable: this.props.cardInfo.valCards.length ? false : true
             });
-            setTimeout(()=>{
+            setTimeout(() => {
                 this.dateHandlerForCurrentMonth();
                 this.monitoringHandler();
-                },0)
+            }, 0)
 
         }
 
     }
 
     componentWillMount() {
-        if(this.props.cardInfo.uzCards.length > 0){
+        if (this.props.cardInfo.uzCards.length > 0) {
             this.dateHandlerForCurrentMonth();
             this.monitoringHandler();
         }
@@ -240,7 +243,7 @@ class Monitoring extends Component {
                                 page_number: prevState.page_number + 1,
                                 lastPage: JSON.parse(responseJsonUZS.last),
                                 innerWaiting: false,
-                                visible : true,
+                                visible: true,
                             }
                         })
                     } else {
@@ -597,7 +600,7 @@ class Monitoring extends Component {
             })
         }
         return (
-           this.state.visible ? this.props.cardInfo.uzCards.length > 0 ? <div style={{position: 'relative'}}>
+            this.state.visible ? this.props.cardInfo.uzCards.length > 0 ? <div style={{position: 'relative'}}>
                 <MuiPickersUtilsProvider utils={DateFnsUtils} locale={locale}>
                     <div style={{
                         borderRadius: "6px",
@@ -743,6 +746,29 @@ class Monitoring extends Component {
                                     </Button>
                                 </Grid>
                                 {!this.state.noData ? <Grid style={{width: "100%"}}>
+                                        <Divider style={{width: "100%"}} style={{marginTop: '10px'}}/>
+                                        <Table className={classes.table} style={{background: '#f7f8fa'}}>
+                                            <TableHead>
+                                                <TableCell className={`font-size-10`}
+                                                           style={{color: '#000000', fontSize: '12px', height: '33px'}}>
+                                                    {lan.branchOperation[currentLanguage]}
+                                                </TableCell>
+                                                <TableCell align="center" className={`font-size-8`} style={{
+                                                    color: '#000000',
+                                                    fontSize: '12px',
+                                                    height: '33px'
+                                                }}>
+                                                    {lan.date[currentLanguage]}
+                                                </TableCell>
+                                                <TableCell className={` font-size-8`} style={{
+                                                    color: '#000000',
+                                                    fontSize: '12px',
+                                                    height: '33px'
+                                                }}>
+                                                    {lan.amount[currentLanguage]}
+                                                </TableCell>
+                                            </TableHead>
+                                        </Table>
                                         {this.state.monitoringType === "income" ?
                                             <Income incomeData={this.state.incomeData}
                                                     historyType={this.state.historyType}

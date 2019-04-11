@@ -98,9 +98,9 @@ class Outcome extends Component {
                 return <TableRow onClick={() => this.handler(row)} title={lan.showCheck[currentLanguage]}
                                  key={iterator++}
                                  className={classes.cursorPointer}>
-                    <TableCell className={`${classes.firstColumn}  font-size-10`} >{row.merchantName}</TableCell>
+                    <TableCell className={`${classes.firstColumn}  font-size-10`}>{row.merchantName}</TableCell>
                     <TableCell align="right"
-                               className={`${classes.secondColumn}  font-size-8`}>{String(row.udate).substr(6, 2) + "." + String(row.udate).substr(4, 2) + "." + String(row.udate).substr(0,4)}</TableCell>
+                               className={`${classes.secondColumn}  font-size-8`}>{String(row.udate).substr(6, 2) + "." + String(row.udate).substr(4, 2) + "." + String(row.udate).substr(0, 4)}</TableCell>
                     <TableCell
                         className={`${classes.thirdColumn}  font-size-8`}>-{accounting.formatMoney((row.reqamt) / 100)} {lan.UZS[currentLanguage]}</TableCell>
                 </TableRow>
@@ -130,7 +130,8 @@ class Outcome extends Component {
                               marginTop: theme.spacing.unit
                           }}>
                         <Avatar alt="Asia Alliance Bank" src={AABIcon} className={classes.avatar}/>
-                        <Typography component="h3" variant="h6" style={{marginLeft: "5px"}} color="primary" className="bank-name">
+                        <Typography component="h3" variant="h6" style={{marginLeft: "5px"}} color="primary"
+                                    className="bank-name">
                             Asia Alliance Bank
                         </Typography>
                     </Grid>
@@ -144,32 +145,38 @@ class Outcome extends Component {
                     <Table>
                         <TableHead>
                             <TableRow>
-                                <TableCell className={`${classes.secondColumn} ${classes.merchantName} font-size-8 merchant-name`}>{this.state.dataForDialog.merchantName}</TableCell>
-                                <TableCell  className={`${classes.thirdColumn} ${classes.secondColumn} font-size-8`}>- {accounting.formatMoney(this.state.dataForDialog.reqamt / 100)} {lan.UZS[currentLanguage]}</TableCell>
+                                <TableCell
+                                    className={`${classes.secondColumn} ${classes.merchantName} font-size-8 merchant-name`}>{this.state.dataForDialog.merchantName}</TableCell>
+                                <TableCell
+                                    className={`${classes.thirdColumn} ${classes.secondColumn} font-size-8`}>- {accounting.formatMoney(this.state.dataForDialog.reqamt / 100)} {lan.UZS[currentLanguage]}</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             <TableRow>
-                                <TableCell className={`${classes.secondColumn} font-size-8`}>{lan.branchOperation[currentLanguage]} {/*Пункт обслуживание */} </TableCell>
+                                <TableCell
+                                    className={`${classes.secondColumn} font-size-8`}>{lan.branchOperation[currentLanguage]} {/*Пункт обслуживание */} </TableCell>
                                 <TableCell className={`${classes.secondColumn} font-size-8`}
                                            align="right">{this.state.dataForDialog.merchant}</TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell className={`${classes.secondColumn} font-size-8`}>{lan.terminal[currentLanguage]} {/*Терминал */}</TableCell>
+                                <TableCell
+                                    className={`${classes.secondColumn} font-size-8`}>{lan.terminal[currentLanguage]} {/*Терминал */}</TableCell>
                                 <TableCell className={`${classes.secondColumn} font-size-8`}
                                            align="right">{this.state.dataForDialog.terminal}</TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell className={`${classes.secondColumn} font-size-8`}>{lan.transactionNo[currentLanguage]} {/*Номер транзакции */} </TableCell>
+                                <TableCell
+                                    className={`${classes.secondColumn} font-size-8`}>{lan.transactionNo[currentLanguage]} {/*Номер транзакции */} </TableCell>
                                 <TableCell className={`${classes.secondColumn} font-size-8`}
                                            align="right">{this.state.dataForDialog.utrnno}</TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell className={`${classes.secondColumn} font-size-8`}>{lan.createTime[currentLanguage]} {/*Время создная */}</TableCell>
+                                <TableCell
+                                    className={`${classes.secondColumn} font-size-8`}>{lan.createTime[currentLanguage]} {/*Время создная */}</TableCell>
                                 <TableCell className={`${classes.secondColumn} font-size-8`} align="right">
                                     {String(this.state.dataForDialog.udate).substr(6, 2) + "."
                                     + String(this.state.dataForDialog.udate).substr(4, 2) + "."
-                                    + String(this.state.dataForDialog.udate).substr(0,4)}
+                                    + String(this.state.dataForDialog.udate).substr(0, 4)}
 
                                     {"   " + ((String(this.state.dataForDialog.utime).length === 5 ?
                                         ("0" + this.state.dataForDialog.utime) : "" +
@@ -183,11 +190,12 @@ class Outcome extends Component {
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell className={`${classes.secondColumn} font-size-8`}>{lan.payTime[currentLanguage]} {/*Время оплаты */}</TableCell>
+                                <TableCell
+                                    className={`${classes.secondColumn} font-size-8`}>{lan.payTime[currentLanguage]} {/*Время оплаты */}</TableCell>
                                 <TableCell className={`${classes.secondColumn} font-size-8`}
                                            align="right">{String(this.state.dataForDialog.udate).substr(6, 2) + "."
                                 + String(this.state.dataForDialog.udate).substr(4, 2) + "."
-                                + String(this.state.dataForDialog.udate).substr(0,4)}
+                                + String(this.state.dataForDialog.udate).substr(0, 4)}
                                     {"   " + ((String(this.state.dataForDialog.utime).length === 5 ?
                                         ("0" + this.state.dataForDialog.utime) : "" +
                                         this.state.dataForDialog.utime).substr(0, 2) + ":" +
@@ -200,12 +208,14 @@ class Outcome extends Component {
                                 </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell className={`${classes.secondColumn} font-size-8`}>{lan.card[currentLanguage]} {/*Карта*/} </TableCell>
+                                <TableCell
+                                    className={`${classes.secondColumn} font-size-8`}>{lan.card[currentLanguage]} {/*Карта*/} </TableCell>
                                 <TableCell align="right"
                                            className={`${classes.secondColumn} font-size-8`}>{this.state.dataForDialog.hpan}</TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell className={`${classes.secondColumn} font-size-8`}>{lan.amount[currentLanguage]} {/*Сумма платежа */}</TableCell>
+                                <TableCell
+                                    className={`${classes.secondColumn} font-size-8`}>{lan.amount[currentLanguage]} {/*Сумма платежа */}</TableCell>
                                 <TableCell className={`${classes.thirdColumn} font-size-8`}
                                            align="right">-{accounting.formatMoney(this.state.dataForDialog.reqamt / 100)} {lan.UZS[currentLanguage]}</TableCell>
                             </TableRow>
@@ -216,7 +226,7 @@ class Outcome extends Component {
                               onClick={this.handlePrint}>
                             <div style={{display: 'flex', justifyContent: "center"}}>
                                 <Print style={{width: "32px", height: "32px", color: "#3C3F41"}}
-                                      className="check_icon2"/>
+                                       className="check_icon2"/>
                             </div>
                             <Typography className="check_icon3">
                                 {lan.print[currentLanguage]}{/*Print*/}
@@ -238,8 +248,10 @@ class Outcome extends Component {
         return (
             <div className={classes.root}>
                 <Divider style={{width: "100%"}}/>
+
                 <div style={(historyType === "uz" && !lastPage) ? {height: '58vh'} : {height: '68vh'}}>
                     <Table className={classes.table}>
+
                         <TableBody>
                             {drawOutcomeData}
                         </TableBody>
