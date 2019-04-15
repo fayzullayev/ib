@@ -1,7 +1,7 @@
 import {createMuiTheme} from "@material-ui/core";
 
-const primary = '#25265E';
-const secondary = '#ffc004';
+const primary = '#00AEED';
+const secondary = '#00AEED';
 const bar  = '#0A266C';
 
 
@@ -21,6 +21,7 @@ const theme = createMuiTheme({
         fontSize: "14px",
         padding: "10px 60px",
         marginBottom: 16,
+        color : 'white'
     },
     sideBarDrawerBack:bar,
     typography: {useNextVariants: true}
