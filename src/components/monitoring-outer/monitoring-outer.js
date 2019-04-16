@@ -168,7 +168,7 @@ class Monitoring extends Component {
                 isWaiting: false,
                 card_number: this.props.cardInfo.valCards[0].card_number,
                 innerWaiting: false,
-                switchDisable: this.props.cardInfo.valCards.length ? false : true
+                switchDisable: !this.props.cardInfo.valCards.length
             });
             setTimeout(() => {
                 this.dateHandlerForCurrentMonth();
@@ -326,7 +326,7 @@ class Monitoring extends Component {
         let momentDate = momentTime.date();
         let momentMonth = momentTime.month();
         let momentYear = momentTime.year();
-        let yesterday = momentTime.format('YYYYMMDD')
+        let yesterday = momentTime.format('YYYYMMDD');
         let yesterdayWithDots = moment(now).subtract(1, 'days').format('DD.MM.YYYY');
         this.setState({
             ...this.state,
@@ -508,7 +508,7 @@ class Monitoring extends Component {
                 if (responseJsonUZS.content.length > 0) {
                     let incomeJSON = responseJsonUZS.content.filter(result => result.credit === "true");
                     let outcomeJSON = responseJsonUZS.content.filter(result => result.credit === "false");
-                    this.setState((prevState, props) => {
+                    this.setState((prevState) => {
                         return {
                             ...this.state,
                             incomeData: this.state.incomeData.concat(incomeJSON),
@@ -746,7 +746,7 @@ class Monitoring extends Component {
                                     </Button>
                                 </Grid>
                                 {!this.state.noData ? <Grid style={{width: "100%"}}>
-                                        <Divider style={{width: "100%"}} style={{marginTop: '10px'}}/>
+                                        <Divider style={{width: "100%", marginTop: '10px'}}/>
                                         <Table className={classes.table} style={{background: '#f7f8fa'}}>
                                             <TableHead>
                                                 <TableCell className={`font-size-10`}
@@ -760,11 +760,12 @@ class Monitoring extends Component {
                                                 }}>
                                                     {lan.date[currentLanguage]}
                                                 </TableCell>
-                                                <TableCell className={` font-size-8`} style={{
-                                                    color: '#000000',
-                                                    fontSize: '12px',
-                                                    height: '33px'
-                                                }}>
+                                                <TableCell className={` font-size-8`}
+                                                           style={{
+                                                               color: '#000000',
+                                                               fontSize: '12px',
+                                                               height: '33px'
+                                                           }}>
                                                     {lan.amount[currentLanguage]}
                                                 </TableCell>
                                             </TableHead>
