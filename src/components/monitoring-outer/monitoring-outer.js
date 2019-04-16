@@ -129,7 +129,7 @@ class Monitoring extends Component {
             cardTypeToMonitorUZ: true,
             uzCards: this.props.cardInfo.uzCards,
             valCards: this.props.cardInfo.valCards,
-            atFilter: true,
+            atFilter: false,
             monitoringType: "outcome",
             incomeData: null,
             outcomeData: null,
@@ -143,8 +143,7 @@ class Monitoring extends Component {
             currentLanguage: this.props.language,
             hasError: false,
             errorMessage: "",
-            switchDisable: true,
-            visible: false,
+            switchDisable: true
         }
     }
 
@@ -171,7 +170,7 @@ class Monitoring extends Component {
                 switchDisable: !this.props.cardInfo.valCards.length
             });
             setTimeout(() => {
-                this.dateHandlerForCurrentMonth();
+                // this.dateHandlerForCurrentMonth();
                 this.monitoringHandler();
             }, 0)
 
@@ -180,13 +179,17 @@ class Monitoring extends Component {
     }
 
     componentWillMount() {
+
         if (this.props.cardInfo.uzCards.length > 0) {
-            this.dateHandlerForCurrentMonth();
+            // this.dateHandlerForCurrentMonth();
             this.monitoringHandler();
         }
     }
 
     monitoringHandler = () => {
+        let now = Date();
+        let firstDayOfCurrentMonth = moment(now).startOf('month').format('YYYYMMDD');
+        let today1 = moment(now).format('YYYYMMDD');
         this.setState({
             ...this.state,
             innerWaiting: true
@@ -213,8 +216,8 @@ class Monitoring extends Component {
             card_numbers: uzCardsFiltered,
             page_number: this.state.page_number,
             page_item_size: this.state.page_item_size,
-            start_date: this.state.start_date,
-            end_date: this.state.end_date
+            start_date: firstDayOfCurrentMonth,
+            end_date: today1
         };
         let requestForUSDCards = {
             request: this.state.requestUSD,
@@ -226,7 +229,7 @@ class Monitoring extends Component {
         };
 
         if (this.state.cardTypeToMonitorUZ) {
-            console.log(requestForUZSCards);
+            console.log("Monitoring outer===========> ", requestForUZSCards);
             this.api.SetAjax(requestForUZSCards).then(responseJsonUZS => {
                 if (responseJsonUZS.result === "0" && responseJsonUZS.msg === "") {
                     if (responseJsonUZS.content.length > 0) {
@@ -242,8 +245,7 @@ class Monitoring extends Component {
                                 uzCardsFiltered: uzCardsFiltered,
                                 page_number: prevState.page_number + 1,
                                 lastPage: JSON.parse(responseJsonUZS.last),
-                                innerWaiting: false,
-                                visible: true,
+                                innerWaiting: false
                             }
                         })
                     } else {
@@ -493,14 +495,17 @@ class Monitoring extends Component {
             ...this.state,
             innerWaitingForTable: true
         });
+        let now = Date();
+        let firstDayOfCurrentMonth = moment(now).startOf('month').format('YYYYMMDD');
+        let today1 = moment(now).format('YYYYMMDD');
         let requestForUZSCards = {
             request: this.state.requestUZS,
             message_type: this.state.message_typeUZS,
             card_numbers: this.state.uzCardsFiltered,
             page_number: this.state.page_number,
             page_item_size: this.state.page_item_size,
-            start_date: this.state.start_date,
-            end_date: this.state.end_date
+            start_date: firstDayOfCurrentMonth,
+            end_date: today1
         };
         console.log(requestForUZSCards);
         this.api.SetAjax(requestForUZSCards).then(responseJsonUZS => {
@@ -600,7 +605,7 @@ class Monitoring extends Component {
             })
         }
         return (
-            this.state.visible ? this.props.cardInfo.uzCards.length > 0 ? <div style={{position: 'relative'}}>
+            this.state.uzCards.length > 0 ? <div style={{position: 'relative'}}>
                 <MuiPickersUtilsProvider utils={DateFnsUtils} locale={locale}>
                     <div style={{
                         borderRadius: "6px",
@@ -810,7 +815,7 @@ class Monitoring extends Component {
                         }
                     </div>
                 </MuiPickersUtilsProvider>
-            </div> : null : null
+            </div> : null
         );
     }
 }

@@ -90,31 +90,34 @@ class Income extends Component {
         let lan = Translations.Monitoring.IncomeOutcome;
         let drawIncome;
         console.log("incomeData", incomeData);
-        if (historyType === "uz") {
-            drawIncome = incomeData.map(row => {
-                return <TableRow onClick={() => this.handler(row)} title={lan.showCheck[currentLanguage]}
-                                 key={iterator++}
-                                 className={classes.cursorPointer}>
-                    <TableCell className={`${classes.firstColumn}  font-size-10`}>{row.merchantName}</TableCell>
-                    <TableCell align="right"
-                               className={`${classes.secondColumn} font-size-8`}>{String(row.udate).substr(6, 2) + "."
-                    + String(row.udate).substr(4, 2) + "."
-                    + String(row.udate).substr(0, 4)}</TableCell>
-                    <TableCell
-                        className={`${classes.thirdColumn}  font-size-8`}>+{accounting.formatMoney((row.reqamt) / 100)} {lan.UZS[currentLanguage]}</TableCell>
-                </TableRow>
-            })
+        if (incomeData !== null) {
+            if (historyType === "uz") {
+                drawIncome = incomeData.map(row => {
+                    return <TableRow onClick={() => this.handler(row)} title={lan.showCheck[currentLanguage]}
+                                     key={iterator++}
+                                     className={classes.cursorPointer}>
+                        <TableCell className={`${classes.firstColumn}  font-size-10`}>{row.merchantName}</TableCell>
+                        <TableCell align="right"
+                                   className={`${classes.secondColumn} font-size-8`}>{String(row.udate).substr(6, 2) + "."
+                        + String(row.udate).substr(4, 2) + "."
+                        + String(row.udate).substr(0, 4)}</TableCell>
+                        <TableCell
+                            className={`${classes.thirdColumn}  font-size-8`}>+{accounting.formatMoney((row.reqamt) / 100)} {lan.UZS[currentLanguage]}</TableCell>
+                    </TableRow>
+                })
 
-        } else {
-            drawIncome = incomeData.map(row => {
-                return <TableRow key={iterator++}>
-                    <TableCell className={classes.firstColumn}>{row.abvr_name}</TableCell>
-                    <TableCell align="right" className={classes.secondColumn}>{row.oper_date}</TableCell>
-                    <TableCell
-                        className={classes.thirdColumn}>+{accounting.formatMoney(row.amount)} {row.accnt_ccy}</TableCell>
-                </TableRow>
-            })
+            } else {
+                drawIncome = incomeData.map(row => {
+                    return <TableRow key={iterator++}>
+                        <TableCell className={classes.firstColumn}>{row.abvr_name}</TableCell>
+                        <TableCell align="right" className={classes.secondColumn}>{row.oper_date}</TableCell>
+                        <TableCell
+                            className={classes.thirdColumn}>+{accounting.formatMoney(row.amount)} {row.accnt_ccy}</TableCell>
+                    </TableRow>
+                })
+            }
         }
+
 
         let drawDialog;
         if (this.state.dialogOpen) {
